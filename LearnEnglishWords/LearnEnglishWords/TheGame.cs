@@ -26,10 +26,12 @@ namespace LearnEnglishWords
         }
         public enum ListType
         {
+            ArianaDangerousWoman,
+            QueenLoveOfMyLife,
             SundayBloodySunday,
-            Avril_Complicated,
+            //Avril_Complicated,
             //Beatles_Help,
-            Breakaway,
+            //Breakaway,
             //JackJohnsonBananaPancakes,            
             //AVRILNakedAvrilLavigne ,
             //AVRILAnythingButOrdinary ,
@@ -41,9 +43,6 @@ namespace LearnEnglishWords
             MinimalPairs_i_ee_MEDIUM,
             MinimalPairs_i_ee_HARD,
             General
-            
-
-
             //Detran,
             //AVRILImWithYouAvrilLavigne,
         }

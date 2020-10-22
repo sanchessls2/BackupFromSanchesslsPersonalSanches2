@@ -19,6 +19,97 @@ namespace LearnEnglishWords
 
     public class WordDatabase
     {
+
+        public static string ArianaDangerousWoman = @"Oh, yeah
+Don't need permission
+Made my decision to test my limits
+'Cause it's my business
+God as my witness
+Start what I finished
+Don't need no hold up
+Taking control of this kind of moment
+I'm locked and loaded
+Completely focused my mind is open
+All that you got, skin to skin, oh my God
+Don't you stop, boy
+Somethin' 'bout you
+Makes me feel like a dangerous woman
+Somethin' 'bout, somethin' 'bout
+Somethin' 'bout you
+Makes me wanna do things that I shouldn't
+Somethin' 'bout, somethin' 'bout, somethin' 'bout
+Nothin' to prove and I'm bulletproof and
+Know what I'm doing
+The way we're movin' like introducing
+Us to a new thing
+I wanna savor, save it for later
+The taste of flavor, 'cause I'm a taker
+'Cause I'm a giver, it's only nature
+I live for danger
+All that you got, skin to skin, oh my God
+Don't you stop, boy
+Oh, yeah
+Somethin' 'bout you
+Makes me feel like a dangerous woman
+Somethin' 'bout, somethin' 'bout
+Somethin' 'bout you
+Makes me wanna do things that I shouldn't
+Somethin' 'bout, somethin' 'bout
+Somethin' 'bout you
+All girls wanna be like that
+Bad girls underneath, like that
+You know how I'm feeling inside (somethin' 'bout, somethin' 'bout)
+All girls wanna be like that
+Bad girls underneath, like that
+You know how I'm feeling inside (somethin' 'bout, somethin' 'bout)
+Somethin' 'bout you
+Makes me feel like a dangerous woman
+Somethin' 'bout, somethin' 'bout
+Somethin' 'bout you
+Makes me wanna do things that I shouldn't
+Somethin' 'bout, somethin' 'bout
+Somethin' 'bout you
+All girls wanna be like that
+Bad girls underneath like that
+You know how I'm feeling inside
+Somethin' 'bout, somethin' 'bout
+All girls wanna be like that
+Bad girls underneath like that
+You know how I'm feeling inside (somethin' 'bout, somethin' 'bout)
+somethin' 'bout, somethin' 'bout
+Somethin' 'bout you
+(Yeah, there's somethin' 'bout you boy)
+(Yeah, there's somethin' 'bout you boy)
+(Yeah, there's somethin' 'bout you boy) somethin' 'bout, somethin' 'bout
+Somethin' 'bout you";
+
+        public static string LoveOfMyLive = @"Love of my life, you've hurt me
+You've broken my heart and now you leave me
+Love of my life, can't you see?
+Bring it back, bring it back
+Don't take it away from me, because you don't know
+What it means to me
+Love of my life, don't leave me
+You've stolen my love, you now desert me
+Love of my life, can't you see?
+Bring it back, bring it back
+Don't take it away from me
+Because you don't know
+What it means to me
+Obrigado
+You will remember
+When this is blown over
+Everything's all by the way
+When I grow older
+I will be there at your side to remind you
+How I still love you (I still love you)
+I still love you
+Oh, hurry back, hurry back
+Don't take it away from me
+You don't know what it means to me
+Love of my life
+Love of my life
+Ooh, eh (alright)";
         public static string Sunday = @"Yeah
 I can't believe the news today
 Oh, I can't close my eyes
@@ -2309,129 +2400,129 @@ Tomorrow it may change";
             //P_Adiciona_palavra(ListofWords, "from", "Clique em solicitar traducao para ver a traducao", new List<ListType>() { ListType.JackJohnsonBananaPancakes });
             //P_Adiciona_palavra(ListofWords, "gotta", "Clique em solicitar traducao para ver a traducao", new List<ListType>() { ListType.JackJohnsonBananaPancakes });
 
-            P_Adiciona_palavra(ListofWords, "grew", "cresceu", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "up", "acima", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "in", "no", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "a", "uma", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "small", "pequeno", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "town", "Cidade", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "and", "e", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "when", "quando", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "the", "a", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "rain", "chuva", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "would", "seria", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "fall", "cair", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "down", "baixa", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "i'd", "Eu iria", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "just", "somente", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "stare", "olhar fixamente", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "out", "Fora", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "my", "meu", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "window", "janela", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "dreaming", "sonhando", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "of", "do", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "what", "o que", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "could", "poderia", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "be", "estar", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "if", "E se", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "end", "fim", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "happy", "feliz", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "i", "Eu", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "pray", "orar", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "trying", "tentando", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "hard", "Difícil", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "to", "para", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "reach", "alcance", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "but", "mas", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "tried", "tentou", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "speak", "falar", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "felt", "sentido", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "like", "gostar", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "no", "não", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "one", "1", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "hear", "ouvir", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "me", "mim", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "wanted", "procurado", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "belong", "pertencer", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "here", "aqui", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "something", "alguma coisa", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "so", "tão", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "wrong", "errado", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "prayed", "rezou", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "break", "pausa", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "away", "longe", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "i'll", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "spread", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "wings", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "learn", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "how", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "fly", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "do", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "it", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "takes", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "till", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "touch", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "sky", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "make", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "wish", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "take", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "chance", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "change", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "breakaway", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "darkness", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "into", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "sun", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "won't", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "forget", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "all", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "ones", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "that", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "love", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "risk", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "wanna", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "feel", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "warm", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "breeze", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "sleep", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "under", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "palm", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "tree", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "rush", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "ocean", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "get", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "on", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "board", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "fast", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "train", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "travel", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "jet", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "plane", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "far", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "gotta", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "buildings", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "with", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "hundred", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "floors", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "swinging", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "round", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "revolving", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "doors", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "maybe", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "don't", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "where", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "they'll", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "keep", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "moving", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "though", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "it's", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "not", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "easy", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "tell", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "you", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "goodbye", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "place", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "come", "", new List<ListType>() { ListType.Breakaway });
-            P_Adiciona_palavra(ListofWords, "from", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "grew", "cresceu", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "up", "acima", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "in", "no", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "a", "uma", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "small", "pequeno", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "town", "Cidade", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "and", "e", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "when", "quando", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "the", "a", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "rain", "chuva", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "would", "seria", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "fall", "cair", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "down", "baixa", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "i'd", "Eu iria", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "just", "somente", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "stare", "olhar fixamente", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "out", "Fora", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "my", "meu", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "window", "janela", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "dreaming", "sonhando", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "of", "do", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "what", "o que", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "could", "poderia", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "be", "estar", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "if", "E se", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "end", "fim", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "happy", "feliz", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "i", "Eu", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "pray", "orar", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "trying", "tentando", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "hard", "Difícil", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "to", "para", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "reach", "alcance", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "but", "mas", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "tried", "tentou", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "speak", "falar", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "felt", "sentido", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "like", "gostar", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "no", "não", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "one", "1", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "hear", "ouvir", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "me", "mim", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "wanted", "procurado", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "belong", "pertencer", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "here", "aqui", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "something", "alguma coisa", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "so", "tão", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "wrong", "errado", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "prayed", "rezou", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "break", "pausa", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "away", "longe", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "i'll", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "spread", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "wings", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "learn", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "how", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "fly", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "do", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "it", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "takes", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "till", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "touch", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "sky", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "make", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "wish", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "take", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "chance", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "change", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "breakaway", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "darkness", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "into", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "sun", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "won't", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "forget", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "all", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "ones", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "that", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "love", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "risk", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "wanna", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "feel", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "warm", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "breeze", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "sleep", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "under", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "palm", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "tree", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "rush", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "ocean", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "get", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "on", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "board", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "fast", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "train", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "travel", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "jet", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "plane", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "far", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "gotta", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "buildings", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "with", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "hundred", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "floors", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "swinging", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "round", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "revolving", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "doors", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "maybe", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "don't", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "where", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "they'll", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "keep", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "moving", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "though", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "it's", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "not", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "easy", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "tell", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "you", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "goodbye", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "place", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "come", "", new List<ListType>() { ListType.Breakaway });
+            //P_Adiciona_palavra(ListofWords, "from", "", new List<ListType>() { ListType.Breakaway });
 
             //beatles
             //P_Adiciona_palavra(ListofWords, "i", "Eu", new List<ListType>() { ListType.Beatles_Help });
@@ -2514,110 +2605,110 @@ Tomorrow it may change";
 
             /*complicated*/
             
-            P_Adiciona_palavra(ListofWords, "life's", "da vida", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "like", "gostar", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "this", "isto", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "that's", "isso é", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "the", "a", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "way", "maneira", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "it", "isto", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "is", "é", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "cause", "causa", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "chill", "calafrio", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "out", "Fora", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "what", "o que", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "ya", "sim", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "yelling", "gritando", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "for", "para", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "lay", "deitar", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "back", "costas", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "it's", "Está", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "all", "tudo", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "been", "fui", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "done", "feito", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "before", "antes", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "and", "e", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "if", "E se", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "you", "vocês", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "could", "poderia", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "only", "só", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "let", "deixei", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "be", "estar", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "will", "vai", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "see", "Vejo", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "i", "Eu", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "are", "estão", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "when", "quando", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "we're", "nós somos", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "driving", "dirigindo", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "in", "no", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "your", "seu", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "car", "carro", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "you're", "você é", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "talking", "falando", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "to", "para", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "me", "mim", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "one", "1", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "on", "em", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "but", "mas", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "become", "tornar-se", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "somebody", "alguém", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "else", "outro", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "round", "'volta", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "everyone", "todos", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "watching", "assistindo", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "relax", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "try", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "cool", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "look", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "a", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "fool", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "tell", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "why'd", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "have", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "go", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "make", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "things", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "so", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "complicated", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "acting", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "gets", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "frustrated", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "fall", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "crawl", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "break", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "take", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "get", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "turn", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "into", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "honesty", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "promise", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "i'm", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "never", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "gonna", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "find", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "faking", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "come", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "over", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "unannounced", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "dressed", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "up", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "something", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "where", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "at", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "making", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "laugh", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "strike", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "pose", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "off", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "preppy", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "clothes", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "know", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "not", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "fooling", "", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "anyone", "", new List<ListType>() { ListType.Avril_Complicated });
-            /**/
+            //P_Adiciona_palavra(ListofWords, "life's", "da vida", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "like", "gostar", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "this", "isto", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "that's", "isso é", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "the", "a", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "way", "maneira", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "it", "isto", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "is", "é", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "cause", "causa", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "chill", "calafrio", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "out", "Fora", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "what", "o que", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "ya", "sim", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "yelling", "gritando", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "for", "para", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "lay", "deitar", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "back", "costas", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "it's", "Está", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "all", "tudo", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "been", "fui", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "done", "feito", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "before", "antes", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "and", "e", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "if", "E se", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "you", "vocês", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "could", "poderia", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "only", "só", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "let", "deixei", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "be", "estar", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "will", "vai", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "see", "Vejo", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "i", "Eu", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "are", "estão", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "when", "quando", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "we're", "nós somos", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "driving", "dirigindo", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "in", "no", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "your", "seu", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "car", "carro", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "you're", "você é", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "talking", "falando", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "to", "para", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "me", "mim", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "one", "1", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "on", "em", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "but", "mas", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "become", "tornar-se", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "somebody", "alguém", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "else", "outro", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "round", "'volta", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "everyone", "todos", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "watching", "assistindo", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "relax", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "try", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "cool", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "look", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "a", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "fool", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "tell", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "why'd", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "have", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "go", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "make", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "things", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "so", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "complicated", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "acting", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "gets", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "frustrated", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "fall", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "crawl", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "break", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "take", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "get", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "turn", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "into", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "honesty", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "promise", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "i'm", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "never", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "gonna", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "find", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "faking", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "come", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "over", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "unannounced", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "dressed", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "up", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "something", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "where", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "at", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "making", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "laugh", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "strike", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "pose", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "off", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "preppy", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "clothes", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "know", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "not", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "fooling", "", new List<ListType>() { ListType.Avril_Complicated });
+            //P_Adiciona_palavra(ListofWords, "anyone", "", new List<ListType>() { ListType.Avril_Complicated });
+            ///**/
 
             P_Adiciona_palavra(ListofWords, "yeah", "sim", new List<ListType>() { ListType.SundayBloodySunday });
             P_Adiciona_palavra(ListofWords, "i", "Eu", new List<ListType>() { ListType.SundayBloodySunday });
@@ -2727,6 +2818,158 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "jesus", "", new List<ListType>() { ListType.SundayBloodySunday });
             P_Adiciona_palavra(ListofWords, "on", "", new List<ListType>() { ListType.SundayBloodySunday });
 
+            P_Adiciona_palavra(ListofWords, "love", "amar", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "of", "do", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "my", "meu", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "life", "vida", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "you've", "você tem", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "hurt", "doeu", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "me", "mim", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "broken", "quebrado", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "heart", "coração", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "and", "e", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "now", "agora", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "you", "vocês", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "leave", "sair", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "can't", "não pode", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "see", "Vejo", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "bring", "trazer", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "it", "isto", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "back", "costas", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "don't", "não", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "take", "toma", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "away", "longe", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "from", "a partir de", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "because", "Porque", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "know", "conhecer", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "what", "que", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "means", "significa", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "to", "para", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "stolen", "roubado", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "desert", "deserto", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "obrigado", "obrigado", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "will", "vai", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "remember", "lembrar", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "when", "quando", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "this", "isto", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "is", "é", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "blown", "estourado", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "over", "sobre", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "everything's", "tudo", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "all", "tudo", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "by", "por", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "the", "a", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "way", "caminho", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "i", "Eu", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "grow", "crescer", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "older", "Mais velho", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "be", "estar", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "there", "lá", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "at", "em", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "your", "seu", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "side", "lado", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "remind", "lembrar", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "how", "como", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "still", "ainda", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "oh", "oh", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "hurry", "pressa", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "eh", "Eh", new List<ListType>() { ListType.QueenLoveOfMyLife });
+            P_Adiciona_palavra(ListofWords, "alright", "tudo certo(bem)", new List<ListType>() { ListType.QueenLoveOfMyLife });
+
+            P_Adiciona_palavra(ListofWords, "oh", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "yeah", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "don't", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "need", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "permission", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "made", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "my", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "decision", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "to", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "test", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "limits", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "cause", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "it's", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "business", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "god", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "as", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "witness", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "start", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "what", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "i", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "finished", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "hold", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "up", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "taking", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "control", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "of", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "this", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "kind", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "moment", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "i'm", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "locked", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "and", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "loaded", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "completely", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "focused", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "mind", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "is", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "open", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "all", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "that", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "you", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "got", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "skin", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "stop", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "boy", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "something", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "'bout", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "makes", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "me", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "feel", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "like", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "a", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "dangerous", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "woman", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "wanna", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "do", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "things", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "shouldn't", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "nothing", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "prove", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "bulletproof", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "know", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "doing", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "the", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "way", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "we're", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "moving", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "introducing", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "us", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "new", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "thing", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "savor", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "save", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "it", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "for", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "later", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "taste", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "flavor", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "'cause", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "taker", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "giver", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "only", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "nature", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "live", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "danger", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "girls", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "be", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "bad", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "underneath", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "how", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "feeling", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "inside", "", new List<ListType>() { ListType.ArianaDangerousWoman });
+            P_Adiciona_palavra(ListofWords, "there's", "", new List<ListType>() { ListType.ArianaDangerousWoman });
 
             /*
              * 0-- n conheco nenhum
