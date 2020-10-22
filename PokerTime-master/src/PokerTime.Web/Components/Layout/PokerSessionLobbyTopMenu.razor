@@ -1,0 +1,52 @@
+@using PokerTime.Domain.Entities
+
+<aside class="menu">
+    <TopMenu BrandIsClickable="false">
+        <div class="navbar-start navbar-poker-start">
+            <div class="navbar-item">
+                <h1 class="poker-title">@this._layoutInfo.Title</h1>
+            </div>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item poker-progress-container">
+                <div class="poker-progress @(this.CurrentStage == SessionStage.NotStarted ? "poker-progress--inactive" : String.Empty)">
+                    <PokerSessionProgressItem 
+                        CurrentStage="@this.CurrentStage"
+                        ApplicableTo="@SessionStage.Discussion"
+                        Text="Discuss"/>
+
+                    <PokerSessionProgressItem 
+                        CurrentStage="@this.CurrentStage"
+                        ApplicableTo="@SessionStage.Estimation"
+                        Text="Estimation"/>
+
+                    <PokerSessionProgressItem 
+                        CurrentStage="@this.CurrentStage"
+                        ApplicableTo="@SessionStage.EstimationDiscussion"
+                        Text="Consolidate"/>
+
+                    <PokerSessionProgressItem 
+                        CurrentStage="@this.CurrentStage"
+                        ApplicableTo="@SessionStage.Finished"
+                        Text="Finished"/>
+                </div>
+            </div>
+        </div>
+    </TopMenu>
+</aside>
+
+@code
+{
+    #nullable disable
+    private PokerSessionLayoutInfo _layoutInfo = new PokerSessionLayoutInfo("Loading...");
+
+    private SessionStage CurrentStage => this._layoutInfo.Stage ?? SessionStage.NotStarted;
+
+    public void Update(in PokerSessionLayoutInfo layoutInfo)
+    {
+        this._layoutInfo = layoutInfo;
+
+        this.StateHasChanged();
+    }
+}

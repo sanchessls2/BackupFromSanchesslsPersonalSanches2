@@ -1,0 +1,16 @@
+version: 2
+jobs:
+    build:
+        parallelism: 4
+        docker:
+            - image: circleci/buildpack-deps:buster
+        steps:
+            - checkout
+
+            - setup_remote_docker
+
+            - run:
+                  name: Run docker-compose tests
+                  command: |
+                      docker-compose --file docker-compose.test.yml build
+                      docker-compose --file docker-compose.test.yml run sut

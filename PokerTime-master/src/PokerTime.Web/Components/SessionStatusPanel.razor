@@ -1,0 +1,53 @@
+@using PokerTime.Domain.Entities
+
+<article class="message poker-status-panel">
+    <div class="message-header">
+        @* Each stage has its own title *@
+        <SessionStageText ApplicableTo="@SessionStage.NotStarted"
+                                Text="Not started yet" />
+        <SessionStageText ApplicableTo="@SessionStage.Discussion"
+                                Text="User story discussion" />
+        <SessionStageText ApplicableTo="@SessionStage.Estimation"
+                                Text="Estimation" />
+        <SessionStageText ApplicableTo="@SessionStage.EstimationDiscussion"
+                                Text="Concensus" />
+        <SessionStageText ApplicableTo="@SessionStage.Finished"
+                                Text="Finished" />
+    </div>
+    <div class="message-body">
+        @* Each stage has its own explanation *@
+        <p class="poker-status-panel__primary-explanation">
+            <SessionStageText ApplicableTo="@SessionStage.NotStarted"
+                                    Text="We are waiting for the facilitator to start the planning poker session." />
+            <SessionStageText ApplicableTo="@SessionStage.Discussion"
+                                    Text="The facilitator discusses the user story with you." />
+            <SessionStageText ApplicableTo="@SessionStage.Estimation"
+                                    Text="Place your estimations. Once you and your team are done the facilitator will show all the cards." />
+            <SessionStageText ApplicableTo="@SessionStage.EstimationDiscussion"
+                                    Text="Discuss your estimations and reach a concensus." />
+            <SessionStageText ApplicableTo="@SessionStage.Finished"
+                                    Text="The planning poker session is now finished." />
+        </p>
+
+        @* Each stage has its own panel and controls *@
+        <SessionStagePanel ApplicableTo="@SessionStage.NotStarted">
+            <PokerTime.Web.Components.StagePanels.NotStarted/>
+        </SessionStagePanel>
+
+        <SessionStagePanel ApplicableTo="@SessionStage.Discussion">
+            <PokerTime.Web.Components.StagePanels.Discussion />
+        </SessionStagePanel>
+
+        <SessionStagePanel ApplicableTo="@SessionStage.Estimation">
+            <PokerTime.Web.Components.StagePanels.Estimation />
+        </SessionStagePanel>
+
+        <SessionStagePanel ApplicableTo="@SessionStage.EstimationDiscussion">
+            <PokerTime.Web.Components.StagePanels.EstimationDiscussion />
+        </SessionStagePanel>
+
+        <SessionStagePanel ApplicableTo="@SessionStage.Finished">
+            <PokerTime.Web.Components.StagePanels.Finished />
+        </SessionStagePanel>
+    </div>
+</article>

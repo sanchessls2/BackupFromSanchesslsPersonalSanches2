@@ -1,0 +1,65 @@
+@using Microsoft.Extensions.Logging
+@using PokerTime.Application.Common.Models
+@using PokerTime.Application.Poker.Commands
+@using PokerTime.Application.Sessions.Queries.GetSessionStatus
+@inherits MediatorComponent
+@inject ILogger<CardChooser> Logger
+
+@if (this.ShowErrorMessage)
+{
+    <ErrorMessage Text="Something went wrong executing your command. Please try again." />
+}
+
+@if (this.SessionStatus.CanChooseCards)
+{
+    <h3 class="title is-size-5"><span class="icon"><i class="fas fa-exclamation-circle"></i></span> Place your bets...</h3>
+}
+else
+{
+    <h3 class="title is-size-5">Waiting for the facilitator...</h3>
+}
+
+<div data-test-element-id="card-chooser">
+    @foreach (SymbolModel cardSymbol in this.AvailableSymbols)
+    {
+        // There is no need to use @key here as this is always the same list: within the same session it won't change
+
+        <UserCard Symbol="cardSymbol" OnClick="symbol => this.ChooseCard(symbol)"/>
+    }
+</div>
+
+@code {
+#nullable disable
+    [CascadingParameter]
+    public SessionStatus SessionStatus { get; set; }
+
+    [Parameter]
+    public ICollection<SymbolModel> AvailableSymbols { get; set; } = new List<SymbolModel>(0);
+
+    private bool ShowErrorMessage { get; set; }
+
+    private async Task ChooseCard(SymbolModel symbol)
+    {
+        if (this.SessionStatus == null)
+        {
+            return;
+        }
+
+        if (!this.SessionStatus.CanChooseCards)
+        {
+            return;
+        }
+
+        try
+        {
+            this.ShowErrorMessage = false;
+            await this.Mediator.Send(new PlayCardCommand(this.SessionStatus.SessionId, this.SessionStatus.UserStory?.Id ?? 0, symbol.Id));
+        }
+        catch (Exception ex)
+        {
+            this.Logger.LogError(ex, $"Unable to choose card: {symbol.AsString}");
+
+            this.ShowErrorMessage = true;
+        }
+    }
+}

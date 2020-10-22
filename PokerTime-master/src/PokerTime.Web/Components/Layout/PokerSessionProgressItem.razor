@@ -1,0 +1,40 @@
+@using PokerTime.Domain.Entities
+
+<div class="poker-progress__item @this.CssClass">
+    <span>
+        @this.Text
+    </span>
+</div>
+
+@code {
+    [Parameter]
+    public SessionStage CurrentStage { get; set; }
+
+    [Parameter]
+    public SessionStage ApplicableTo { get; set; }
+
+    [Parameter]
+    public string? Text { get; set; }
+
+    private bool IsPrevious => this.ApplicableTo < this.CurrentStage;
+    private bool IsCurrent => this.CurrentStage == this.ApplicableTo;
+
+    private string CssClass
+    {
+        get
+        {
+            if (this.IsCurrent)
+            {
+                return "poker-progress__item--is-current";
+            }
+
+            if (this.IsPrevious)
+            {
+                return "poker-progress__item--is-previous";
+            }
+
+            return "poker-progress__item--future";
+        }
+    }
+
+}

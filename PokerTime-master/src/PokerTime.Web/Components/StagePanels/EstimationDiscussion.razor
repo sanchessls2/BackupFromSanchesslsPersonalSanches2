@@ -1,0 +1,73 @@
+@using PokerTime.Application.Sessions.Queries.GetSessionStatus
+@using PokerTime.Application.SessionWorkflows.Commands
+@inherits MediatorComponent
+
+<h3 class="poker-status-panel__next-step-title">Current step</h3>
+<SessionRolePanel>
+    <Facilitator>
+        <p>
+            Discuss the estimations with the participants and come to a concensus.
+        </p>
+        
+        <NextStageInvocationForm TModel="InitiateDiscussionStageCommand"
+                                 Model="@this.ReestimateCommand"
+                                 OnContinue="@this.OnInvokeReestimate"
+                                 ButtonText="Re-estimate user story" />
+
+        <hr/>
+
+        <NextStageInvocationForm TModel="InitiateDiscussionStageCommand"
+                                 Model="@this.NextUserStoryCommand"
+                                 OnContinue="@this.OnInvokeNextUserStory"
+                                 ButtonText="New user story">
+            <div class="field">
+                <div class="control">
+                    <label class="label" for="pokertime-userstory-title">User story title</label>
+                    <div class="control">
+                        <InputText id="pokertime-userstory-title" class="input" type="text" @bind-Value="@NextUserStoryCommand.UserStoryTitle" placeholder="" />
+                    </div>
+
+                    <ValidationMessage For="() => NextUserStoryCommand.UserStoryTitle"></ValidationMessage>
+                </div>
+            </div>
+        </NextStageInvocationForm>
+
+        <hr />
+
+        <NextStageInvocationForm TModel="InitiateFinishStageCommand"
+                                 Model="@this.FinishCommand"
+                                 OnContinue="@this.OnInvokeContinueToFinishStage"
+                                 ButtonText="End session" 
+                                 TestButtonId="workflow-end-button"/>
+    </Facilitator>
+    <Participant>
+        <p>
+            Come to a consensus with your team or re-estimate the user story.
+        </p>
+    </Participant>
+</SessionRolePanel>
+
+@code {
+    #nullable disable
+    
+    [CascadingParameter]
+    public SessionStatus SessionStatus { get; set; }
+
+    private InitiateFinishStageCommand FinishCommand { get; } = new InitiateFinishStageCommand();
+
+    private InitiateDiscussionStageCommand ReestimateCommand { get; } = new InitiateDiscussionStageCommand { IsReestimation = true };
+
+    private InitiateDiscussionStageCommand NextUserStoryCommand { get; } = new InitiateDiscussionStageCommand();
+
+    private Task OnInvokeContinueToFinishStage(InitiateFinishStageCommand command) => this.Mediator.Send(command);
+    private Task OnInvokeReestimate(InitiateDiscussionStageCommand command) => this.Mediator.Send(command);
+    private Task OnInvokeNextUserStory(InitiateDiscussionStageCommand command) => this.Mediator.Send(command);
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+
+        this.ReestimateCommand.UserStoryTitle = this.SessionStatus.UserStory?.Title;
+    }
+
+}

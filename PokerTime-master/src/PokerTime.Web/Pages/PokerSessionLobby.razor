@@ -1,0 +1,31 @@
+@page "/pokertime-session/{sessionId}/lobby"
+@layout PokerSessionLayout
+@inherits PokerSessionLobbyBase
+
+@if (this.SessionStatus == null) {
+    if (this.HasLoaded) {
+        <ErrorMessage Text="This poker session cannot be found!" />
+    } else {
+        <p>Hold on... crunching the data</p>
+    }
+        
+    return;
+}
+
+<CascadingValue Value=@this.SessionIdObject IsFixed="true">
+    <CascadingValue Value=@this.CurrentParticipant IsFixed="true">
+        <CascadingValue Value=@this.SessionStatus>
+            <div class="columns" data-test-element-id="main-board">
+                <div class="column is-three-quarters">
+                    <SessionBoard />
+                </div>
+
+                <div class="column">
+                    <SessionStatusPanel />
+
+                    <SessionOnlineList SessionId="@this.SessionId" CurrentParticipant="@this.CurrentParticipant" />
+                </div>
+            </div>
+        </CascadingValue>
+    </CascadingValue>
+</CascadingValue>

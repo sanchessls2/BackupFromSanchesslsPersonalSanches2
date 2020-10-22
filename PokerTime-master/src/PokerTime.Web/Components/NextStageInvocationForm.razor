@@ -1,0 +1,80 @@
+@using Microsoft.Extensions.Logging
+@using PokerTime.Application.SessionWorkflows.Commands
+@using PokerTime.Domain.ValueObjects
+@typeparam TModel
+@inject ILogger<NextStageInvocationForm<TModel>> Logger
+
+@* Fix up when blazor supports type param constraints: https://github.com/aspnet/AspNetCore/issues/8433 *@
+@if (this.Model == null)
+{
+    return;
+}
+
+@if (ShowErrorMessage)
+{
+    <ErrorMessage Text="Something went wrong executing your command. Please try again." />
+}
+
+<EditForm Model="@Model" OnValidSubmit="@HandleValidSubmit" OnInvalidSubmit="@HandleInvalidSubmit">
+    <Blazored.FluentValidation.FluentValidationValidator />
+
+    @this.ChildContent
+
+    <div class="field">
+        <div class="control">
+            <button type="submit" class="button is-primary is-large" data-test-element-id="@TestButtonId">@ButtonText</button>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+#nullable disable
+
+    [Parameter]
+    public string TestButtonId { get; set; } = "workflow-continue-button";
+
+    [Parameter]
+    public string ButtonText { get; set; }
+
+    [Parameter]
+    public AbstractStageCommand Model { get; set; }
+
+    [CascadingParameter]
+    public SessionIdentifier SessionId { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public EventCallback<TModel> OnContinue { get; set; }
+
+    private bool ShowErrorMessage { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        if (this.SessionId != null && this.Model != null)
+        {
+            this.Model.SessionId = this.SessionId.StringId;
+        }
+
+        base.OnParametersSet();
+    }
+
+    private void HandleInvalidSubmit()
+    {
+        this.ShowErrorMessage = false;
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        try
+        {
+            await this.OnContinue.InvokeAsync((TModel)(object)this.Model);
+        }
+        catch (Exception ex)
+        {
+            this.Logger.LogError(ex, $"Unable to start the next stage of retrospective {this.SessionId} from form: {this.ButtonText}");
+            this.ShowErrorMessage = true;
+        }
+    }
+}

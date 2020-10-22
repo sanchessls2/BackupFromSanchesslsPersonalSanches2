@@ -1,0 +1,30 @@
+$poker-card-border-radius: 10px;
+$poker-card-height-ratio: 1.5;
+$poker-card-font-size-divider: 2.5;
+
+$symbol-offset-transform: translateY(-50%);
+
+@mixin poker-card-base($base-width) {
+    $symbol-font-size: $base-width / $poker-card-font-size-divider;
+    $height: $base-width * $poker-card-height-ratio;
+
+    display: inline-block;
+    border-radius: $poker-card-border-radius;
+    height: $height;
+    width: $base-width;
+    position: relative;
+    user-select: none;
+
+    // Text displayed on the card
+    &__symbol {
+        font-size: $symbol-font-size;
+        position: absolute;
+        top: 50%;
+        transform: $symbol-offset-transform;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 2px #000;
+    }
+}

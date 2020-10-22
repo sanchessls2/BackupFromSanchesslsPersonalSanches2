@@ -1,0 +1,175 @@
+#!/bin/bash
+
+POKERTIME_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+POKERTIME_APP_DIR=$POKERTIME_HOME/app
+SYSTEMD_MANIFEST_NAME=pokertime.service
+SYSTEMD_MANIFEST=/etc/systemd/system/$SYSTEMD_MANIFEST_NAME
+
+echo "PokerTime multi-purpose launch script ($POKERTIME_HOME)"
+
+function run {
+	echo Set environment variables from launch.conf
+	source $POKERTIME_HOME/launch.conf
+	
+	echo Starting application
+	cd $POKERTIME_APP_DIR
+	exec ./PokerTime.Web
+	
+	exit $?
+}
+
+function install {
+	echo "Installing as systemd service"
+	
+	if [ -z "$1" ]; then
+		echo "Error: User not given."
+		echo "Usage: install [user]"
+		exit -1
+	fi
+	
+	if [ -f $SYSTEMD_MANIFEST ]; then
+		echo "Error: Systemd service exists at $SYSTEMD_MANIFEST"
+		exit -2
+	fi
+	
+	echo "... Writing service manifest"
+	cat > $SYSTEMD_MANIFEST <<EOF
+[Unit]
+Description=PokerTime
+
+[Service]
+WorkingDirectory=$POKERTIME_HOME
+ExecStart=$POKERTIME_HOME/launch run
+Restart=always
+
+# Restart service after 10 seconds if service crashes
+RestartSec=10
+SyslogIdentifier=pokertime
+User=$1
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+	echo "... Enabling service"
+	systemctl enable $SYSTEMD_MANIFEST_NAME
+	EXIT_CODE=$?
+	
+	if [ $EXIT_CODE -ne 0 ]; then
+		echo "Error enable systemd service at $SYSTEMD_MANIFEST"
+		rm $SYSTEMD_MANIFEST
+		exit $EXIT_CODE
+	fi
+	
+	echo "... Ensuring execution permissions"
+	chmod +x $POKERTIME_APP_DIR/App
+}
+
+function uninstall {
+	if [! -f $SYSTEMD_MANIFEST ]; then
+		echo "Service not installed ($SYSTEMD_MANIFEST not present)"
+		exit 0
+	fi
+
+	echo "Uninstalling from systemd"
+	echo "... Stopping if we're running"
+	systemctl stop $SYSTEMD_MANIFEST_NAME
+	
+	echo "... Disabling service"
+	systemctl disable $SYSTEMD_MANIFEST_NAME
+	
+	echo "... Deleting service manifest"
+	rm /etc/systemd/system/$SYSTEMD_MANIFEST_NAME
+}
+
+function start-service {
+	echo "Starting return retro via systemd"
+	systemctl start $SYSTEMD_MANIFEST_NAME
+	
+	EXIT_CODE=$?
+	if [ $EXIT_CODE -ne 0 ]; then
+		exit $EXIT_CODE
+	fi
+	
+	echo "... Status:"
+	systemctl status $SYSTEMD_MANIFEST_NAME --no-pager --full
+	
+	EXIT_CODE=$?
+	if [ $EXIT_CODE -ne 0 ]; then
+		exit $EXIT_CODE
+	fi
+}
+
+function stop-service {
+	echo "Stopping return retro via systemd"
+	systemctl stop $SYSTEMD_MANIFEST_NAME
+	
+	EXIT_CODE=$?
+	if [ $EXIT_CODE -ne 0 ]; then
+		exit $EXIT_CODE
+	fi
+	
+	echo "... Status:"
+	systemctl status $SYSTEMD_MANIFEST_NAME --no-pager --full
+}
+
+case "$1" in
+	"run")
+		run
+		exit $?
+		;;
+		
+	"start")
+		start-service
+		exit $?
+		;;
+	
+	"stop")
+		stop-service
+		exit $?
+		;;
+		
+	"restart")
+		stop-service
+		start-service
+		exit $?
+		;;
+		
+	"status")
+		systemctl status $SYSTEMD_MANIFEST_NAME
+		exit $?
+		;;
+		
+	"log")
+		journalctl -fu $SYSTEMD_MANIFEST_NAME
+		exit $?
+		;;
+	
+	"install")
+		install $2
+		exit 0
+		;;
+	
+	"uninstall")
+		uninstall
+		exit 0
+		;;
+	
+	*)
+		echo "Unknown option $1"
+		echo ""
+		echo "Options:"
+		echo "  install [user]  - Install as systemd service, run as specified user"
+		echo "  uninstall       - Uninstall, installed as systemd service"
+		echo "  "
+		echo "  restart         - Restart (if installed as systemd service)"
+		echo "  start           - Start (if installed as systemd service) and dump service status. Pass --no-interactive to prevent serv"
+		echo "  stop            - Stop (if installed as systemd service)"
+		echo "  "
+		echo "  log             - View journalctl"
+		echo "  status          - View systemd status"
+		echo "  "
+		echo "  run             - Run"
+		exit -1
+		;;
+esac

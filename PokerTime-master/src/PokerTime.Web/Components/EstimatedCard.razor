@@ -1,0 +1,54 @@
+@using PokerTime.Application.Common.Models
+@using PokerTime.Application.Sessions.Queries.GetSessionStatus
+
+@if (this.SessionStatus == null || this.Estimation == null)
+{
+    return;
+}
+
+    <div class="estimated-card @(IsShown ? "estimated-card--shown" : "estimated-card--hidden") @(IsSmall ? "estimated-card--small" : "estimated-card--normal")"
+         data-test-element-id="estimation-card"
+         data-id="@this.Estimation.Id"
+         data-symbol-id="@this.Estimation.Symbol.Id"
+         data-participant-id="@this.Estimation.ParticipantId">
+
+        <div class="estimated-card__face estimated-card__face--front"
+             style="background-color: #@this.Estimation.ParticipantColor.HexString">
+            @if (IsShown)
+            {
+                <div class="estimated-card__symbol">@this.Estimation.Symbol.AsString</div>
+            }
+            else
+            {
+                // This is the HTML for the hidden back-side - not shown
+
+                <div class="estimated-card__symbol">🎈</div>
+            }
+
+            <div class="estimated-card__author">@this.Estimation.ParticipantName</div>
+        </div>
+        <div class="estimated-card__face estimated-card__face--back"
+             style="background-color: #@this.Estimation.ParticipantColor.HexString">
+            <div class="estimated-card__symbol estimated-card__symbol--hidden estimated-card__symbol--backside">?</div>
+            
+            <div class="estimated-card__author">@this.Estimation.ParticipantName</div>
+        </div>
+    </div>
+
+@code {
+    #nullable disable
+
+    [CascadingParameter]
+    public SessionStatus SessionStatus { get; set; }
+
+    [CascadingParameter]
+    public CurrentParticipantModel CurrentParticipant { get; set; }
+
+    [Parameter]
+    public EstimationModel Estimation { get; set; }
+
+    [Parameter]
+    public bool IsSmall { get; set; }
+
+    private bool IsShown => this.SessionStatus.CanViewEstimations || this.Estimation.ParticipantId == this.CurrentParticipant.Id;
+}

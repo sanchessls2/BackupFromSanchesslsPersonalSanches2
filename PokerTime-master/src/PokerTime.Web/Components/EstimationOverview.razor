@@ -1,0 +1,28 @@
+@using PokerTime.Application.Common.Models
+@inherits EstimationOverviewBase
+
+<h3 class="title is-size-5">Estimations of your team</h3>
+
+<div data-test-element-id="estimation-overview">
+    @foreach (EstimationModel estimation in this.Estimations.Values)
+    {
+        <Revealable @key="@estimation.ParticipantId" Inline="true" CssClass="estimated-card-container">
+            <EstimatedCard Estimation="@estimation" />
+        </Revealable>
+    }
+
+    @if (this.SessionStatus.CanChooseCards)
+    {
+        @foreach (string participantWithoutEstimation in this.ParticipantsWithoutEstimation)
+        {
+            <Revealable Inline="true" CssClass="estimated-card-container">
+                <div class="estimated-card estimated-card--pending" 
+                     data-test-element-id="unestimated-card"
+                     data-participant-name="@participantWithoutEstimation" 
+                     title="Estimation needed from: @participantWithoutEstimation">
+                    
+                </div>
+            </Revealable>
+        }
+    }
+</div>

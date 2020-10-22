@@ -1,0 +1,46 @@
+@inherits Microsoft.AspNetCore.Components.LayoutComponentBase
+@using PokerTime.Web.Components.Layout
+@implements PokerTime.Web.Components.Layout.IPokerSessionLayout
+
+<PokerSessionLobbyTopMenu @ref="this._topMenu"/>
+
+<section class="section">
+    <div class="container">
+        <CascadingValue Value=@this IsFixed="true" TValue="IPokerSessionLayout">
+            @Body
+        </CascadingValue>
+    </div>
+</section>
+
+<Footer />
+
+@code {
+
+    private PokerSessionLayoutInfo _layoutInfo = new PokerSessionLayoutInfo("Loading...", null);
+    private PokerSessionLobbyTopMenu? _topMenu;
+    private bool _needToUpdateTopMenu;
+
+    public void Update(in PokerSessionLayoutInfo layoutInfo)
+    {
+        this._layoutInfo = layoutInfo;
+
+        if (this._topMenu != null)
+        {
+            this._topMenu.Update(layoutInfo);
+        }
+        else
+        {
+            this._needToUpdateTopMenu = true;
+        }
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        base.OnAfterRender(firstRender);
+
+        if (this._needToUpdateTopMenu && this._topMenu != null)
+        {
+            this._topMenu.Update(this._layoutInfo);
+        }
+    }
+}
