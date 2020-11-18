@@ -27,8 +27,9 @@ namespace LearnEnglishWords
         public enum ListType
         {
             OthersideRedHot,
+            SayYouWontLetGoJamesArthur,
             //ArianaDangerousWoman,
-           // QueenLoveOfMyLife,
+            // QueenLoveOfMyLife,
             //SundayBloodySunday,
             //Avril_Complicated,
             //Beatles_Help,

@@ -24,9 +24,10 @@ namespace LearnEnglishWords
                 HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
 
                 //Titulo
-            P_POPULA(wordsOnly, WordDatabase.OthersideRedHot);
+            P_POPULA(wordsOnly, WordDatabase.SayYouWontLetGoJamesArthur);
 
-            
+
+
             int count = 0;
             int max = wordsOnly.Distinct().Count();
             ExibeProgresso.iniciaStatus(count,max);
@@ -82,7 +83,7 @@ namespace LearnEnglishWords
             string teste = Translate(item);
 
             string str2 = teste;//"Clique em solicitar traducao para ver a traducao";
-                string str = "P_Adiciona_palavra(ListofWords,\""+ item +"\",\""+str2+""+"\""+", new List<ListType>() { ListType.OthersideRedHot });";
+                string str = "P_Adiciona_palavra(ListofWords,\""+ item +"\",\""+str2+""+"\""+ ", new List<ListType>() { ListType.SayYouWontLetGoJamesArthur });";
                 retorno.Add(str);
             
 
