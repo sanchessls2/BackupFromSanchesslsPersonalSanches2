@@ -27,7 +27,7 @@ namespace LearnEnglishWords
         {
             InitializeComponent();
 
-            AutoUpdater.Start(@"https://raw.githubusercontent.com/sanchessls2/PersonalSanches2/master/Atualizador.txt");
+            AutoUpdater.Start(@"https://raw.githubusercontent.com/sanchessls2/PersonalSanches2/main/Atualizador.txt");
 
             this.Text = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
