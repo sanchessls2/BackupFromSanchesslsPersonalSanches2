@@ -26,9 +26,10 @@ namespace LearnEnglishWords
         }
         public enum ListType
         {
-            ArianaDangerousWoman,
-            QueenLoveOfMyLife,
-            SundayBloodySunday,
+            OthersideRedHot,
+            //ArianaDangerousWoman,
+           // QueenLoveOfMyLife,
+            //SundayBloodySunday,
             //Avril_Complicated,
             //Beatles_Help,
             //Breakaway,

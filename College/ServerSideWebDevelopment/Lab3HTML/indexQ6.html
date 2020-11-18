@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made with Thimble</title>
+    <link rel="stylesheet" href="q6style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Calculator</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="numA">Number 1: </label>
+          <input type="number" step="any" class="form-control" id="numA" name="numA" placeholder="Enter a number">
+        </div>
+        <div class="form-group">
+          <label for="numA">Number 2:</label>
+          <input type="number" step="any" class="form-control" id="numB" name="numB" placeholder="Enter a number">
+        </div>
+        <div class="form-group">
+          <button id="Add" type="button" class="btn btn-primary">Add</button>
+          <button id="Sub" type="button" class="btn btn-primary">Subtract</button>
+          <button id="Mult" type="button" class="btn btn-primary">Multiply</button>
+          <button id="Div" type="button" class="btn btn-primary">Divide</button>
+        </div>
+      </form>
+      <label for="pwd">Answer:</label>
+      <div class="well answer" id="answer">numA + numB = answer</div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
