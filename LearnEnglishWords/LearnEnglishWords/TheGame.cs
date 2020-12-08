@@ -44,7 +44,9 @@ namespace LearnEnglishWords
             MinimalPairs_i_ee_EASY,
             MinimalPairs_i_ee_MEDIUM,
             MinimalPairs_i_ee_HARD,
-            General
+            General,
+            HarryPotter1,
+            DriverLessons
             //Detran,
             //AVRILImWithYouAvrilLavigne,
         }
