@@ -57,6 +57,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -68,6 +69,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -110,9 +112,10 @@ MonoBehaviour:
   raycastMask:
     serializedVersion: 2
     m_Bits: 311
-  layers: 050000000300000002000000
   position: 0
   collided: 0
+  FloatingTextPrefab: {fileID: 4949677760458683698, guid: f3c427c7daf720c4288c91dce4221ac2,
+    type: 3}
 --- !u!54 &1770752276088728209
 Rigidbody:
   m_ObjectHideFlags: 0

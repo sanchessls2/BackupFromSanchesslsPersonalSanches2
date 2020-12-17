@@ -73,6 +73,7 @@ public class NeuralNetwork : IComparable<NeuralNetwork>
 
     public float[] FeedForward(float[] inputs)//feed forward, inputs >==> outputs.
     {
+        Log.Write("Entrou no Feed");
         for (int i = 0; i < inputs.Length; i++)
         {
             neurons[0][i] = inputs[i];
@@ -114,7 +115,7 @@ public class NeuralNetwork : IComparable<NeuralNetwork>
             {
                 for (int k = 0; k < weights[i][j].Length; k++)
                 {
-                    weights[i][j][k] = (UnityEngine.Random.Range(0f, chance) <= 5) ? weights[i][j][k] += UnityEngine.Random.Range(-val, val) : weights[i][j][k];
+                    weights[i][j][k] = (UnityEngine.Random.Range(0f, chance)  <= 5) ? weights[i][j][k] += UnityEngine.Random.Range(-val, val) : weights[i][j][k];
                 }
             }
         }

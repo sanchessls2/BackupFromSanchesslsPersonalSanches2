@@ -21,10 +21,22 @@ public class Manager : MonoBehaviour
     public List<NeuralNetwork> networks;
     private List<Bot> cars;
 
+    void OnGUI()
+    {
+        GUI.Label(new Rect(10, 10, 100, 20), "Hello World!");
+    }
     void Start()// Start is called before the first frame update
     {
+        
+
         if (populationSize % 2 != 0)
-            populationSize = 50;//if population size is not even, sets it to fifty
+            populationSize = populationSize +1;//if population size is not even, sets it to fifty
+
+        if (populationSize % 2 != 0)
+            populationSize = populationSize + 1;//if population size is not even, sets it to fifty
+
+
+        Log.Write("PopulationSize: " + populationSize.ToString());
 
         InitNetworks();
         InvokeRepeating("CreateBots", 0.1f, timeframe);//repeating function
@@ -60,8 +72,11 @@ public class Manager : MonoBehaviour
             Bot car = (Instantiate(prefab, new Vector3(0, 1.6f, -16), new Quaternion(0, 0, 1, 0))).GetComponent<Bot>();//create botes
             car.network = networks[i];//deploys network to each learner
             cars.Add(car);
+
+            car.ShowFloatingText2("INICIO");
         }
         
+
     }
 
     public void SortNetworks()
@@ -72,6 +87,7 @@ public class Manager : MonoBehaviour
         }
         networks.Sort();
         networks[populationSize - 1].Save("Assets/Save.txt");//saves networks weights and biases to file, to preserve network performance
+        networks[populationSize - 1].Save("Assets/Save2.txt");//saves networks weights and biases to file, to preserve network performance
         for (int i = 0; i < populationSize / 2; i++)
         {
             networks[i] = networks[i + populationSize / 2].copy(new NeuralNetwork(layers));
