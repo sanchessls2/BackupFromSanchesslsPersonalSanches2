@@ -50,7 +50,7 @@ body {
 .buttonStatus
 { 
    border-radius: 1rem;	   
-   margin: 5px 0px 5px 0px;
+   margin: 5px;
    padding: 0px 10px 0px 10px;
    width: fit-content;
 }
@@ -83,4 +83,16 @@ body {
 }
 .dangerColor{
 	background-color:#f5c6cb!Important;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 70px!Important;
+  /*background-color:olivedrab;*/  
 }

@@ -48,7 +48,7 @@ router.get('/', async (req, res) => {
 // id passed as parameter via url
 // Address http://server:port/task/:id
 // returns JSON
-router.get('/:id', async (req, res) => {
+router.get('/:id', checkJwt, checkAuth([authConfig.read]), async (req, res) => {
 
     let result;
     // read value of id parameter from the request url
@@ -71,7 +71,7 @@ router.get('/:id', async (req, res) => {
 // id passed as parameter via url
 // Address http://server:port/task/:id
 // returns JSON
-router.get('/bycat/:id', async (req, res) => {
+router.get('/bycat/:id', checkJwt, checkAuth([authConfig.read]), async (req, res) => {
 
     let result;
 

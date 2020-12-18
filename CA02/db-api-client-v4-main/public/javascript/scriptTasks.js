@@ -1,27 +1,23 @@
-
 // Parse JSON
 // Create task rows
 // Display in web page
-function displayTasks(tasks,status) {
+function displayTasks(tasks, status) {
   // Use the Array map method to iterate through the array of tasks (in json format)
   // Each tasks will be formated as HTML table rowsand added to the array
   // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
   // Finally the output array is inserted as the content into the <tbody id="taskRows"> element.
   console.log("antes de dar pau");
-  if (tasks != null) 
-  {
-    console.log("antes de dar pau 000000001");
-    console.log(tasks);
-    console.log(status);
+  if (tasks != null) {
+    const showUpdate = checkAuth(UPDATE_TASK);
+    const showDelete = checkAuth(DELETE_TASK);
+    const showStatusChange = checkAuth(CHANGE_STATUS_TASK);;
 
     const rows = tasks.map(task => {
       // returns a template string for each task, values are inserted using ${ }
       // <tr> is a table row and <td> a table division represents a column
 
       // check user permissions
-      const showUpdate = checkAuth(UPDATE_TASK);
-      const showDelete = checkAuth(DELETE_TASK);
-      const showStatusChange = true;
+
 
       // Show add task button
       if (checkAuth(CREATE_TASK))
@@ -45,30 +41,63 @@ function displayTasks(tasks,status) {
         row += `<td><button class="btn btn-xs" onclick="deleteTask(${task.TaskId},${status})">
                 <span class="oi oi-trash" data-toggle="tooltip" title="Delete Task"></span></button></td>`
 
-      if (showStatusChange)
-        row += `<td>
-                    <button class="buttonStatus amarelo" onclick="UpdateTaskStatus(${task.TaskId},${1},${status})">
-                    <span data-toggle="tooltip" title="Delete Task"></span>Waiting</button>
-                    <button class="buttonStatus verde" onclick="UpdateTaskStatus(${task.TaskId},${2},${status})">
-                    <span  data-toggle="tooltip" title="Delete Task"></span>In Progress</button>
-                    <button class="buttonStatus vermelho" onclick="UpdateTaskStatus(${task.TaskId},${3},${status})">
-                    <span  data-toggle="tooltip" title="Delete Task"></span>Closed</button>
-                </td>`
+      if (showStatusChange) {
+        row += `<td>`
 
+        if (status != 1) {
+          row += `<button class="buttonStatus amarelo" onclick="UpdateTaskStatus(${task.TaskId},${1},${status})">
+        <span data-toggle="tooltip" title="Delete Task"></span>Waiting</button> `
+        }
+
+        if (status != 2) {
+          row += `<button class="buttonStatus verde" onclick="UpdateTaskStatus(${task.TaskId},${2},${status})">
+        <span  data-toggle="tooltip" title="Delete Task"></span>In Progress</button>`
+        }
+
+        if (status != 3) {
+          row += `<button class="buttonStatus vermelho" onclick="UpdateTaskStatus(${task.TaskId},${3},${status})">
+        <span  data-toggle="tooltip" title="Delete Task"></span>Closed</button>`
+        }
+
+        row += `</td>`
+      }
       // finally, end the row and return
       row += '</tr>';
       return row;
     });
     console.log("antes de dar pau 0000002");
+
+    var taskhead =
+      `<tr>
+    <th>Task ID</th>
+    <th>Description</th>
+    <th>Priority</th>`;
+    if (showUpdate) {
+      taskhead += `<th>Update</th>`;
+    }
+    if (showDelete) {
+      taskhead += `<th>Delete</th>`;
+    }
+    if (showStatusChange) {
+      taskhead += `<th>Move To Status</th>`;
+    }
+    taskhead += `</tr>`;
+
+    document.getElementById('taskHead').innerHTML = taskhead;
     document.getElementById('taskRows').innerHTML = rows.join('');
+    document.getElementById('noTasksDiv').innerHTML = ``;
     console.log("antes de dar pau 0000002.1");
   }
-  else 
-  {
+  else {
+
+    var noTaskDif = `<div>No task has been created on this status - Yet!</div>`;
+
     console.log("antes de dar pau 000000003");
     document.getElementById('taskRows').innerHTML = ``;
+    document.getElementById('taskHead').innerHTML = ``;
+    document.getElementById('noTasksDiv').innerHTML = noTaskDif;
   }
-  
+
 } // end function
 
 
@@ -97,26 +126,26 @@ function displayStatus(statuss) {
     return `<a href="#" class="list-group-item list-group-item-${nameColor}" onclick="updateTasksView(${status.StatusId})">${status.StatusName}</a>`;
   });
 
-    // use  unshift to add a 'Show all' link at the start of the array of catLinks
+  // use  unshift to add a 'Show all' link at the start of the array of catLinks
 
   // Set the innerHTML of the taskRows element = the links contained in catlinks
   // .join('') converts an array to a string, replacing the , seperator with blank.
   document.getElementById('statusList').innerHTML = catLinks.join('');
 
-  $(".list-group .list-group-item-warning").click(function(e) {
+  $(".list-group .list-group-item-warning").click(function (e) {
     $(".list-group .list-group-item").removeClass("active");
     $(".list-group .list-group-item").removeClass("warningColor");
     $(e.target).addClass("active");
     $(e.target).addClass("warningColor");
   });
-  $(".list-group .list-group-item-success").click(function(e) {
+  $(".list-group .list-group-item-success").click(function (e) {
     $(".list-group .list-group-item").removeClass("active");
     $(".list-group .list-group-item").removeClass("successColor");
     $(e.target).addClass("active");
     $(e.target).addClass("successColor");
 
   });
-  $(".list-group .list-group-item-danger").click(function(e) {
+  $(".list-group .list-group-item-danger").click(function (e) {
     $(".list-group .list-group-item").removeClass("active");
     $(".list-group .list-group-item").removeClass("dangerColor");
     $(e.target).addClass("active");
@@ -152,7 +181,9 @@ async function loadTasks(status) {
     const tasks = await getDataAsync(`${BASE_URL}/task/bycat/${status}`);
     // Call displayTasks(), passing the retrieved tasks list
     console.log("vai chamar 02");
-    displayTasks(tasks,status);
+    console.log(tasks);
+    console.log(status);
+    displayTasks(tasks, status);
 
   } // catch and log any errors
   catch (err) {
@@ -167,8 +198,10 @@ async function updateTasksView(id) {
     // call the API enpoint which retrieves tasks by status (id)
     const tasks = await getDataAsync(`${BASE_URL}/task/bycat/${id}`);
     // Display the list of tasks returned by the API
-    console.log("vai chamar 01");
-    displayTasks(tasks,id);
+    console.log("vai chamar 01 ppp + ");
+    console.log(tasks);
+    console.log(status);
+    displayTasks(tasks, id);
 
   } // catch and log any errors
   catch (err) {
@@ -282,7 +315,7 @@ async function prepareTaskUpdate(id) {
 }
 
 // Delete task by id using an HTTP DELETE request
-async function deleteTask(id,status) {
+async function deleteTask(id, status) {
 
   const request = {
     method: 'DELETE',
@@ -300,10 +333,10 @@ async function deleteTask(id,status) {
       const result = await fetch(url, request);
       const response = await result.json();
 
-      if (response == true){
+      if (response == true) {
         console.log("AQUI EM FIM vamos ver 0000005");
-           console.log(status);
-           console.log("ANTES LOCAL TASK00000003");
+        console.log(status);
+        console.log("ANTES LOCAL TASK00000003");
         loadTasks(status);
       }
 
@@ -316,7 +349,7 @@ async function deleteTask(id,status) {
   }
 }
 
-async function UpdateTaskStatus(id, status,statusOrigin) {
+async function UpdateTaskStatus(id, status, statusOrigin) {
 
   // url for api call
   const url = `${BASE_URL}/task`

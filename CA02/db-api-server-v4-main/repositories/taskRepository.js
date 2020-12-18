@@ -13,13 +13,13 @@ const Status = require('../models/status.js');
 // Input parameters are parsed and set before queries are executed
 
 // for json path - Tell MS SQL to return results as JSON 
-const SQL_SELECT_ALL = 'SELECT * FROM Task ORDER BY TaskPriority ASC for json path;';
+const SQL_SELECT_ALL = 'SELECT * FROM Task ORDER BY TaskPriority,TaskId ASC for json path;';
 
 // for json path, without_array_wrapper - use for single json result
 const SQL_SELECT_BY_ID = 'SELECT * FROM Task WHERE TaskId = @id for json path, without_array_wrapper;';
 
 // for json path, without_array_wrapper - use for single json result
-const SQL_SELECT_BY_CATID = 'SELECT * FROM Task WHERE StatusId = @id ORDER BY TaskPriority ASC for json path;';
+const SQL_SELECT_BY_CATID = 'SELECT * FROM Task WHERE StatusId = @id ORDER BY TaskPriority,TaskId ASC for json path;';
 
 // Second statement (Select...) returns inserted record identified by TaskId = SCOPE_IDENTITY()
 const SQL_INSERT = 'INSERT INTO Task (StatusId,TaskDescription, TaskPriority) VALUES (@statusId, @taskDescription, @TaskPriority); SELECT * from dbo.Task WHERE TaskId = SCOPE_IDENTITY();';
