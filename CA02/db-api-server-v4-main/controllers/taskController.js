@@ -71,7 +71,7 @@ router.get('/:id', checkJwt, checkAuth([authConfig.read]), async (req, res) => {
 // id passed as parameter via url
 // Address http://server:port/task/:id
 // returns JSON
-router.get('/bycat/:id', checkJwt, checkAuth([authConfig.read]), async (req, res) => {
+router.get('/bystatus/:id', checkJwt, checkAuth([authConfig.read]), async (req, res) => {
 
     let result;
 
@@ -82,7 +82,7 @@ router.get('/bycat/:id', checkJwt, checkAuth([authConfig.read]), async (req, res
     // returns a single task with matching id
     try {
         // Send response with JSON result    
-        result = await taskService.getTaskByCatId(categoryId);
+        result = await taskService.getTaskByStatusId(categoryId);
         res.json(result);
 
         } catch (err) {

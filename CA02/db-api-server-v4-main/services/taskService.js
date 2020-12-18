@@ -38,7 +38,7 @@ let getTaskById = async (taskId) => {
 // Get tasks in a category via the repository
 // Validate input
 // return tasks
-let getTaskByCatId = async (catId) => {
+let getTaskByStatusId = async (catId) => {
 
     let tasks;
 
@@ -49,7 +49,7 @@ let getTaskByCatId = async (catId) => {
         return "invalid parameter";
     }
 
-    tasks = await taskRepository.getTaskByCatId(catId);
+    tasks = await taskRepository.getTaskByStatusId(catId);
 
     return tasks;
 };
@@ -130,7 +130,7 @@ let deleteTask = async (taskId) => {
 module.exports = {
     getTasks,
     getTaskById,
-    getTaskByCatId,
+    getTaskByStatusId,
     createTask,
     updateTask,
     deleteTask

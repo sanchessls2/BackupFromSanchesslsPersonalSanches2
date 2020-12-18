@@ -178,7 +178,7 @@ async function loadTasks(status) {
       displayStatus(statuss);
 
     // Get a list of tasks
-    const tasks = await getDataAsync(`${BASE_URL}/task/bycat/${status}`);
+    const tasks = await getDataAsync(`${BASE_URL}/task/bystatus/${status}`);
     // Call displayTasks(), passing the retrieved tasks list
     console.log("vai chamar 02");
     console.log(tasks);
@@ -196,7 +196,7 @@ async function updateTasksView(id) {
   try {
     console.log("Andre Sanches updateTasksView");
     // call the API enpoint which retrieves tasks by status (id)
-    const tasks = await getDataAsync(`${BASE_URL}/task/bycat/${id}`);
+    const tasks = await getDataAsync(`${BASE_URL}/task/bystatus/${id}`);
     // Display the list of tasks returned by the API
     console.log("vai chamar 01 ppp + ");
     console.log(tasks);

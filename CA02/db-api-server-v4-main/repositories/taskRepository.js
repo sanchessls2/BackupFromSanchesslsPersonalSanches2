@@ -82,7 +82,7 @@ let getTaskById = async (taskId) => {
 };
 
 // Get tasks by status
-let getTaskByCatId = async (statusId) => {
+let getTaskByStatusId = async (statusId) => {
 
     let tasks;
 
@@ -210,7 +210,7 @@ let deleteTask = async (taskId) => {
 module.exports = {
     getTasks,
     getTaskById,
-    getTaskByCatId,
+    getTaskByStatusId,
     createTask,
     updateTask,
     deleteTask
