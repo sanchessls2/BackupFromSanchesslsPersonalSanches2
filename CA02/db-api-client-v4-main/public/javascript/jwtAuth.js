@@ -25,17 +25,17 @@ function checkStatus () {
   if (accessToken && !isExpired) {
     $('#login').hide();
     $('#logout').show();
-    $('#get-profile').show();
   // else - not logged in
   // Use jQuery to hide logout and profile then show login
   } else {
-    $('#get-profile').hide();
     $('#logout').hide();
     $('#AddProductButton').hide();
     $('#login').show();
   }
   // (re)load products display to reflect change
-  loadProducts();
+  //loadProducts();
+  console.log("ANTES LOCAL TASK00000001");
+  loadTasks(1);
 }
 // Get access token (from session storage, etc.)
 function getAccessToken () {
@@ -60,7 +60,6 @@ function checkSession () {
   }, function (err, result) {
     if (err) {
       console.log(`Could not get a new token using silent authentication (${err.error}).`);
-      $('#get-profile').hide();
       $('#logout').hide();
       $('#login').show();
     } else {
@@ -89,20 +88,6 @@ document.querySelector("#logout").addEventListener("click", function(event) {
   console.log("Logged out");
 }, false);
 
-// get user profile from Auth0 
-document.querySelector("#get-profile").addEventListener("click", async function(event) {
-  event.preventDefault();
-  auth0Authentication.userInfo(getAccessToken(), (err, usrInfo) => {
-    if (err) {
-          // handle error
-      console.error('Failed to get userInfo');
-      return;
-    }
-    // Output result to console (for testing purposes) 
-    console.log(usrInfo);
-    document.querySelector("#results pre").innerHTML = JSON.stringify(usrInfo, null, 2);
-  });
-}, false);
 
 // use jwt-decode to check if jwt contains a permission for the user
 // return true or false

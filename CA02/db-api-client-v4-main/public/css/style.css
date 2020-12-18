@@ -13,3 +13,74 @@ min-height: 115px;
 .link-icon {
     margin-right: 0.3em;
 }
+
+.TopSideBar{
+	background-color: #466f98;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  /*background-color:olivedrab;*/  
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;  
+  white-space: nowrap;
+  overflow:hidden;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.verde {
+	background-color: #c3e6cb!Important;
+}
+
+.amarelo {
+	background-color: #ffeeba!Important;
+}
+
+.vermelho {
+	background-color: #f5c6cb!Important;
+}
+
+.buttonStatus
+{ 
+   border-radius: 1rem;	   
+   margin: 5px 0px 5px 0px;
+   padding: 0px 10px 0px 10px;
+   width: fit-content;
+}
+
+
+.button {
+	display: block;
+	width: 115px;
+	height: 25px;
+	background: #4E9CAF;
+	padding: 10px;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+
+.list-group-item.active{
+	color: black!Important;
+	/*background-color: inherit!Important;*/
+}
+
+.warningColor{
+	background-color:#ffeeba!Important;
+}
+.successColor{
+	background-color:#c3e6cb!Important;
+}
+.dangerColor{
+	background-color:#f5c6cb!Important;
+}

@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasks</title>
+    <title>Products from Azure Database API</title>
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-sm navbar-dark static-top TopSideBar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
-            <a class="navbar-brand" href="">Tasks Planner</a>
+            <a class="navbar-brand" href="#">Products Website</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -19,9 +19,15 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="">Home
+                        <a class="nav-link" href="#">Home
                             <span class="sr-only">(current)</span>
                         </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
                     </li>
                     <li class="nav-item">
                         <a id="login" class="nav-link" href="#" ><span class="oi oi-account-login link-icon"></span>Login</a>
@@ -39,12 +45,12 @@
             <div id="results"><pre></pre></div>
         <div class="row">
             <!-- Page Header -->
-            <h2 class="mt-5" style="margin-left:15px;">Status</h2>
+            <h2 class="mt-5">Products by Category</h2>
         </div>
         <div class="row">
             <div class="col-sm-2">
                 <!-- Page Body Left Column (menu) -->
-                <div id="statusList" class="list-group">
+                <div id="categoryList" class="list-group">
                     <a href="#" class="list-group-item list-group-item-action">First item</a>
                     <a href="#" class="list-group-item list-group-item-action">Second item</a>
                     <a href="#" class="list-group-item list-group-item-action">Third item</a>
@@ -53,74 +59,86 @@
             <div class="col-sm-10">
                 <!-- Page Body Right Side (Content goes here) -->
 
-                <div id="tasks">
+                <div id="products">
 
                     <table class="table table-striped table-bordered table-hover">
                         <thead>
                             <tr>
                                 <!-- <th>id</th> -->
-                                <th>Task ID</th>
-                                <th>Description</th>
-                                <th>Priority</th>
-                                <th>Update</th>
-                                <th>Delete</th>
-                                <th>Move Status</th>
+                                <th>product id</th>
+                                <th>name</th>
+                                <th>description</th>
+                                <th>stock</th>
+                                <th>price</th>
                             </tr>
                         </thead>
-                        <tbody id="taskRows">
-                            <!-- Task Rows to be inserted here -->
+                        <tbody id="productRows">
+                            <!-- Product Rows to be inserted here -->
                         </tbody>
                     </table>
                 </div>
-                <!-- Toggle button used to show or hide the add new task form. -->
-                <button id="AddTaskButton" onclick="taskFormSetup('Add Task')" type="button" class="btn btn-primary"
-                    data-toggle="modal" data-target="#TaskFormDialog">Add Task
+                <!-- Toggle button used to show or hide the add new product form. -->
+                <button id="AddProductButton" onclick="productFormSetup('Add Product')" type="button" class="btn btn-primary"
+                    data-toggle="modal" data-target="#ProductFormDialog">Add Product
                 </button>
             </div>
         </div>
     </div>
     <!-- Modal forms go here-->
     <!-- Bootstrap Modal Dialogs-->
-    <!-- Task Form -->
-    <div class="modal fade" id="TaskFormDialog">
+    <!-- Product Form -->
+    <div class="modal fade" id="ProductFormDialog">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
 
                 <!-- Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title" id="taskFormTitle">Add a Task</h4>
+                    <h4 class="modal-title" id="productFormTitle">Add a Product</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
                 <!-- Body - contains form inputs-->
-                <!-- The id of each input matches a Task property -->
+                <!-- The id of each input matches a Product property -->
                 <div class="modal-body">
-                    <form id="taskForm">
+                    <form id="productForm">
                         <div class="form-group">
-                            <label for="TaskDescription">Description:</label>
-                            <input id="TaskDescription" type="text" class="form-control" name="TaskDescription">
+                            <label for="CategoryId">Category:</label>
+                            <select id="CategoryId" class="form-control" name="CategoryId">
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label for="TaskPriority">Priority:</label>
-                            <input id="TaskPriority" type="number" class="form-control" name="TaskPriority">
+                            <label for="ProductName">Name:</label>
+                            <input id="ProductName" type="text" class="form-control" name="ProductName">
                         </div>
-                        <!-- taskId is a hidden field value is not required but set = 0-->
-                        <input id="TaskId" type="hidden" name="taskId" value="0">
-                        <input id="StatusId" type="hidden" name="StatusId" value="1">
+                        <div class="form-group">
+                            <label for="ProductDescription">Description:</label>
+                            <input id="ProductDescription" type="text" class="form-control" name="ProductDescription">
+                        </div>
+                        <div class="form-group">
+                            <label for="ProductStock">Stock:</label>
+                            <input id="ProductStock" type="number" class="form-control" name="ProductStock">
+                        </div>
+                        <div class="form-group">
+                            <label for="ProductPrice">Price:</label>
+                            <input id="ProductPrice" type="number" min="0.00" max="10000.00" step="0.01"
+                                class="form-control" name="ProductPrice">
+                        </div>
+                        <!-- productId is a hidden field value is not required but set = 0-->
+                        <input id="ProductId" type="hidden" name="productId" value="0">
                     </form>
                 </div>
 
                 <!-- footer -->
                 <div class="modal-footer">
                     <!-- Buttons - note onclick and data-dismiss attribtes-->
-                    <button onclick="addOrUpdateTask()" type="button" class="btn btn-primary"
+                    <button onclick="addOrUpdateProduct()" type="button" class="btn btn-primary"
                         data-dismiss="modal">Save</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
 
             </div>
         </div>
-    </div> <!-- End Task Form  -->
+    </div> <!-- End Product Form  -->
 
     <link rel="stylesheet" href="./css/style.css">
     <!-- Bootstrap 4 Dependencies -->
@@ -141,13 +159,5 @@
     <script src="./javascript/jwt-decode.js"></script>
     <!-- End Auth0 JavaScript --> 
     <script src="./javascript/script.js"></script>
-    <script src="./javascript/scriptTasks.js"></script>
-
-      <footer class="border-top footer text-muted bg-white box-shadow" >
-        <div class="container">
-            &copy; 2020 - Task planner - Andre Sanches Ca2 SSW
-        </div>
-    </footer>
-
-    </body>
+</body>
 </html>

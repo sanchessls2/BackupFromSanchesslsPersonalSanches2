@@ -52,8 +52,10 @@ app.options('*', cors()) // include before other routes
 app.use('/', require('./controllers/index'));
 // route to /product
 app.use('/product', require('./controllers/productController'));
-
 app.use('/category', require('./controllers/categoryController'));
+
+app.use('/task', require('./controllers/taskController'));
+app.use('/status', require('./controllers/statusController'));
 
 app.use('/user', require('./controllers/userController'));
 

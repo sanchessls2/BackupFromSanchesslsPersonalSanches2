@@ -331,4 +331,4 @@ function getProductFormAlt() {
 }
 
 // When this script is loaded, call loadProducts() to add products to the page
-loadProducts();
+//loadProducts();
