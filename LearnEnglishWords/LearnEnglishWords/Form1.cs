@@ -78,11 +78,17 @@ namespace LearnEnglishWords
 
             foreach (TheGame.ListType item in Enum.GetValues(typeof(TheGame.ListType)))
             {
-                TheGame.GetInstance().Report(true,item);
+                Exam toRecord = TheGame.GetInstance().Report(true, item);
+
+                if (toRecord != null)
+                {
+                    HDatabase.GravaRegistro(toRecord,item);
+                }
             }
 
             string report = TheGame.GetInstance().GetReport();
-            Email.SendReport(report);
+                                   
+            //Email.SendReport(report);
 
             button3.Enabled = false;
             button1.Enabled = false;

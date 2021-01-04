@@ -3376,54 +3376,7 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "wonder", "", new List<ListType>() { ListType.HarryPotter1 });
             P_Adiciona_palavra(ListofWords, "spot", "", new List<ListType>() { ListType.HarryPotter1 });
 
-
-            P_Adiciona_palavra(ListofWords, "Steep Climb", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "slippery", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-            P_Adiciona_palavra(ListofWords, "", "", new List<ListType>() { ListType.DriverLessons });
-
-
-
+          
             /*
              * 0-- n conheco nenhum
              * 1-- conheco 1

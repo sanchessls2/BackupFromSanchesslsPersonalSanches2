@@ -139,8 +139,14 @@ namespace LearnEnglishWords
             RunningWord = Database.Words[CurrentWordIndex];
         }
 
-        internal void Report(bool onlytotal, TheGame.ListType tipo)
+        internal Exam Report(bool onlytotal, TheGame.ListType tipo)
         {
+            Exam retorno = new Exam
+            {
+                Date = DateTime.Now,
+                Percentage = 0,
+                Duracao = ""
+            };
 
             double acertou = 0;
             double Errou = 0;
@@ -155,7 +161,7 @@ namespace LearnEnglishWords
 
                 total = acertou + Errou;
 
-                if (total == 0) { return; }
+                if (total == 0) { return null; }
 
                 AdicionaReport("Resumo das palavras");
             }
@@ -169,7 +175,8 @@ namespace LearnEnglishWords
 
                 total = acertou + Errou;
 
-                if (total == 0) { return; }
+                if (total == 0) { return null; }
+
                 AdicionaReport("");
                 AdicionaReport("");
                 AdicionaReport("*              * TIPO  *                   ** ");
@@ -219,13 +226,22 @@ namespace LearnEnglishWords
             double percent =  ((acertou / (total)) * 100);
             AdicionaReport("Percentual de acerto : " + (percent.ToString("0.00")) + "%");
 
+            retorno.Percentage = percent;
+
             var TempoDemorou = DateTime.Now - TheReportBeggining;
+
+            var duracao = new DateTime(TempoDemorou.Ticks).ToString("HH:mm:ss");
+
+            retorno.Duracao = duracao;
+
 
             if (!onlytotal)
             {
-                AdicionaReport("Duracao : " + new DateTime(TempoDemorou.Ticks).ToString("HH:mm:ss"));
+                AdicionaReport("Duracao : " + duracao);
             }
-            
+
+
+            return retorno;
         }
 
         public double GetPercentRight()

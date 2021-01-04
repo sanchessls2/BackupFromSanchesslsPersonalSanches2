@@ -43,7 +43,7 @@
             // 
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Location = new System.Drawing.Point(47, 81);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(472, 446);
             this.checkedListBox1.TabIndex = 0;
@@ -52,7 +52,7 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.button1.Location = new System.Drawing.Point(173, 548);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(165, 28);
             this.button1.TabIndex = 1;
@@ -69,7 +69,7 @@
             "Naked",
             "Anything But Ordinary"});
             this.comboBox1.Location = new System.Drawing.Point(596, 81);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(459, 24);
             this.comboBox1.TabIndex = 2;
@@ -97,7 +97,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(596, 114);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(165, 28);
             this.button2.TabIndex = 5;
@@ -109,7 +109,7 @@
             // 
             this.HardMode.AutoSize = true;
             this.HardMode.Location = new System.Drawing.Point(376, 538);
-            this.HardMode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HardMode.Margin = new System.Windows.Forms.Padding(4);
             this.HardMode.Name = "HardMode";
             this.HardMode.Size = new System.Drawing.Size(123, 21);
             this.HardMode.TabIndex = 6;
@@ -119,7 +119,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(596, 229);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(165, 28);
             this.button3.TabIndex = 7;
@@ -151,7 +151,7 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkedListBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(533, 492);
             this.Name = "Form2";
             this.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
