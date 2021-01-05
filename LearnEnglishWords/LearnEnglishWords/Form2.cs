@@ -157,6 +157,14 @@ namespace LearnEnglishWords
             form.ShowDialog();
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form4 form = new Form4();
+            form.Text = this.Text;
+            form.FormClosed += p_a;
+            form.ShowDialog();
+        }
+
         //private void button3_Click(object sender, EventArgs e)
         //{
 

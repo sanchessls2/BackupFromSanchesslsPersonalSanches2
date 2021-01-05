@@ -54,6 +54,35 @@ namespace LearnEnglishWords
             }
         }
 
+        internal static List<Tuple<List<Exam>,string>> RetornaTodos()
+        {
+            var retorno = new List<Tuple<List<Exam>, string>>();
+
+            string path = commonpath + "\\" + "LearnEnglish" + "\\";
+             
+            var  getall = Directory.GetFiles(path);
+
+            foreach (var item in getall)
+            {
+                string filename = Path.GetFileName(item);
+
+                try
+                {
+                    var obj = File.ReadAllText(item);
+                    var objConverted = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Exam>>(obj);
+                    
+                    retorno.Add(new Tuple<List<Exam>, string>(objConverted, filename));
+                }
+                catch (Exception abc)
+                {
+                    Console.WriteLine(abc.Message);
+                }
+            }
+
+            return retorno;
+
+        }
+
         private static void SetFile(List<Exam> objAtual, ListType type)
         {
             lock (objectBlock)
