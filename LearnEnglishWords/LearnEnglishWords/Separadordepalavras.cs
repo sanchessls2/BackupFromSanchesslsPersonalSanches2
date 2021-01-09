@@ -21,12 +21,10 @@ namespace LearnEnglishWords
 
             //1 ao 27
           
-                HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
+            HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
 
                 //Titulo
-            P_POPULA(wordsOnly, WordDatabase.SayYouWontLetGoJamesArthur);
-
-
+            P_POPULA(wordsOnly, WordDatabase.Marron5Memories);
 
             int count = 0;
             int max = wordsOnly.Distinct().Count();
@@ -83,7 +81,7 @@ namespace LearnEnglishWords
             string teste = Translate(item);
 
             string str2 = teste;//"Clique em solicitar traducao para ver a traducao";
-                string str = "P_Adiciona_palavra(ListofWords,\""+ item +"\",\""+str2+""+"\""+ ", new List<ListType>() { ListType.SayYouWontLetGoJamesArthur });";
+                string str = "P_Adiciona_palavra(ListofWords,\""+ item +"\",\""+str2+""+"\""+ ", new List<ListType>() { ListType.OneU2 });";
                 retorno.Add(str);
             
 

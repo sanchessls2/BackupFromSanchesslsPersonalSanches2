@@ -26,8 +26,10 @@ namespace LearnEnglishWords
         }
         public enum ListType
         {
-            OthersideRedHot,
-            SayYouWontLetGoJamesArthur,
+            OneU2,
+            Marron5Memories,
+            //OthersideRedHot,
+            //SayYouWontLetGoJamesArthur,
             //ArianaDangerousWoman,
             // QueenLoveOfMyLife,
             //SundayBloodySunday,
@@ -38,15 +40,15 @@ namespace LearnEnglishWords
             //AVRILNakedAvrilLavigne ,
             //AVRILAnythingButOrdinary ,
             //AVRILTomorrow,
-            Letter,
+            //Letter,
             //AndreWords,
-            NumberAndHour,
+            //NumberAndHour,
             MinimalPairs_i_ee_EASY,
             MinimalPairs_i_ee_MEDIUM,
             MinimalPairs_i_ee_HARD,
-            General,
-            HarryPotter1,
-            DriverLessons
+            //General,
+            //HarryPotter1,
+            //DriverLessons
             //Detran,
             //AVRILImWithYouAvrilLavigne,
         }
