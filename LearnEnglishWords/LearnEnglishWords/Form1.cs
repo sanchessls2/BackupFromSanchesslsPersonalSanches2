@@ -23,6 +23,7 @@ namespace LearnEnglishWords
     public partial class Form1 : XCoolForm.XCoolForm
     {
         private readonly XmlThemeLoader xtl = new XmlThemeLoader();
+        private readonly bool MusicaMais80 = false;
         public Form1()
         {
             InitializeComponent();
@@ -31,6 +32,9 @@ namespace LearnEnglishWords
             xtl.ApplyTheme(@"Themes\BlueWinterTheme.xml");
 
             typedWord.SelectionAlignment = HorizontalAlignment.Center;
+
+            this.MusicaMais80 = HDatabase.F_LiberaTraduzir(TheGame.GetInstance().GetTipo());
+
             P_ESPERA_RESPOSTA();
             
     }
@@ -66,10 +70,18 @@ namespace LearnEnglishWords
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TheGame.GetInstance().ClickVerDescricao();
-            richTextBox1.Text = TheGame.GetInstance().GetDescription();
-            typedWord.Focus();
-        }
+            if (MusicaMais80)
+            {
+
+                TheGame.GetInstance().ClickVerDescricao();
+                richTextBox1.Text = TheGame.GetInstance().GetDescription();
+                typedWord.Focus();
+             }
+            else
+            {
+                MessageBox.Show("Não mais disponivel devido nota alta!");
+            }
+}
 
         private void P_FIM_DO_JOGO()
         {
@@ -265,15 +277,22 @@ namespace LearnEnglishWords
 
         private void button4_Click(object sender, EventArgs e)
         {
-            try
+            if (MusicaMais80)
             {
-                panel1.Visible = true;
-                richTextBox1.Text = Separador_de_palavras.Translate(TheGame.GetInstance().GetRunningWord());
-                typedWord.Focus();                              
+                try
+                {
+                    panel1.Visible = true;
+                    richTextBox1.Text = Separador_de_palavras.Translate(TheGame.GetInstance().GetRunningWord());
+                    typedWord.Focus();
+                }
+                finally
+                {
+                    panel1.Visible = false;
+                }
             }
-            finally
+            else
             {
-                panel1.Visible = false;
+                MessageBox.Show("Não mais disponivel devido nota alta!");
             }
         }
 

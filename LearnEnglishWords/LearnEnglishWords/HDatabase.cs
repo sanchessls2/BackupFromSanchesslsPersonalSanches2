@@ -87,10 +87,21 @@ namespace LearnEnglishWords
         {
             lock (objectBlock)
             {
-                var obj = Newtonsoft.Json.JsonConvert.SerializeObject(objAtual);
-
+                var obj = Newtonsoft.Json.JsonConvert.SerializeObject(objAtual);             
                 File.WriteAllText(GetFileName(type),obj);
+            }
+        }
 
+        public static bool F_LiberaTraduzir( ListType type)
+        {
+            var obj = GetFile(type);
+            if (obj.Count() > 0)
+            {
+                return (obj.Max(x => x.Percentage) < 85);
+            }
+            else 
+            {
+                return true;   
             }
         }
     }

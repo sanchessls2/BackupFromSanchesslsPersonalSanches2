@@ -53,13 +53,19 @@ namespace LearnEnglishWords
             //AVRILImWithYouAvrilLavigne,
         }
 
-
+        internal ListType GetTipo()
+        {
+            return ActualType;
+        }
 
         private string TheReport = "";
         private DateTime TheReportBeggining = DateTime.MinValue;
      
         private static TheGame TheGameInstance;
         public GameStatus Status = GameStatus.NonInitialized;
+
+        public ListType ActualType { get; private set; }
+
         private WordDatabase Database;
         public int CurrentWordIndex = 0;
         private Word RunningWord;
@@ -117,7 +123,7 @@ namespace LearnEnglishWords
         {
             TheGameInstance.AdicionaReport("Start no Jogo");
             Status = GameStatus.Started;
-            LoadDatabase(Form2.ListaEscolhada);
+            LoadDatabase(Form2.ListaEscolhada.First());
             this.HardModeOn = Form2.HardModeOn();
 
             TheGameInstance.AdicionaReport("Selecionou : ");
@@ -276,11 +282,11 @@ namespace LearnEnglishWords
             return RunningWord.Description;        
         }
 
-        private void LoadDatabase(List<TheGame.ListType> somente)
+        private void LoadDatabase(TheGame.ListType somente)
         {
-            this.Database = new WordDatabase(somente);
+            this.ActualType = somente;
+            this.Database = new WordDatabase(new List<TheGame.ListType>() { somente });
         }
-
    
         internal bool CheckWord(string text)
         {

@@ -62,6 +62,16 @@ namespace LearnEnglishWords
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (checkedListBox1.CheckedItems.Count < 1)
+            {
+                MessageBox.Show("Marca pelomenos um , ME AJUDA AI!.");
+                return;
+            }
+            if (checkedListBox1.CheckedItems.Count > 1)
+            {
+                MessageBox.Show("Por limitacoes tecnicas , e apenas 1 membro trabalhando no desenvolvimento desse produto, so poderemos selecionar 1 de cada vez por enquanto! Deal with it.");
+                return;
+            }
             // new add
             ListaEscolhada = new List<TheGame.ListType>();
             foreach (var item in checkedListBox1.CheckedItems)
