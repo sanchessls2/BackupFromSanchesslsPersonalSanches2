@@ -99,8 +99,10 @@ namespace LearnEnglishWords
             }
 
             string report = TheGame.GetInstance().GetReport();
-                                   
-            //Email.SendReport(report);
+
+            List<MemoryStream> ListaGraphs = Grafico.CriaLista(TheGame.GetInstance().GetTipo());
+
+            Email.SendReport(report, ListaGraphs);
 
             button3.Enabled = false;
             button1.Enabled = false;
@@ -121,7 +123,7 @@ namespace LearnEnglishWords
             }
                 
             Process.Start(filePath);
-            MessageBox.Show("Fim do jogo, Te amo.!");
+            //MessageBox.Show("Fim do jogo, Te amo.!");
             Thread.Sleep(1000);
             this.Close();
 

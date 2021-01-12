@@ -23,12 +23,9 @@ namespace LearnEnglishWords
         }
 
 
-        public static List<Exam> RetornaTodosTypo(ListType type)
+        public static List<Tuple<List<Exam>, string>> RetornaTodosTypo(ListType type)
         {
-            lock (objectBlock)
-            {
-                return GetFile(type);
-            }
+            return RetornaTodos(type.ToString());
         }
 
         private static string GetFileName(ListType type)
@@ -54,7 +51,7 @@ namespace LearnEnglishWords
             }
         }
 
-        internal static List<Tuple<List<Exam>,string>> RetornaTodos()
+        internal static List<Tuple<List<Exam>,string>> RetornaTodos(string fileNameIfEspecific = "")
         {
             var retorno = new List<Tuple<List<Exam>, string>>();
 
@@ -65,6 +62,16 @@ namespace LearnEnglishWords
             foreach (var item in getall)
             {
                 string filename = Path.GetFileName(item);
+
+                if (fileNameIfEspecific != "")
+                {
+                    string toCompare = Path.GetFileName(filename);
+
+                    if (toCompare != (fileNameIfEspecific+ ".dll"))
+                    {
+                        continue;
+                    }
+                }                
 
                 try
                 {

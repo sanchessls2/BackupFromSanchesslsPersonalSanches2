@@ -83,7 +83,7 @@ namespace LearnEnglishWords
             this.Hide();
             Form1 form = new Form1();
             form.Text = this.Text;
-            form.FormClosed += p_a;
+            form.FormClosed += p_a2;
             form.ShowDialog();
 
 
@@ -94,6 +94,12 @@ namespace LearnEnglishWords
         private void p_a(object sender, FormClosedEventArgs e)
         {
             this.Show();            
+        }
+
+        private void p_a2(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+            p_abre_grafico();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -108,6 +114,14 @@ namespace LearnEnglishWords
 
 
 
+        }
+
+        private void p_abre_grafico()
+        {
+            Form4 form = new Form4();
+            form.Text = this.Text;
+            form.FormClosed += p_a;
+            form.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -169,10 +183,7 @@ namespace LearnEnglishWords
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form4 form = new Form4();
-            form.Text = this.Text;
-            form.FormClosed += p_a;
-            form.ShowDialog();
+            p_abre_grafico();
         }
 
         //private void button3_Click(object sender, EventArgs e)

@@ -170,6 +170,7 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Grafico.cs" />
     <Compile Include="HDatabase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgressBarD.cs">

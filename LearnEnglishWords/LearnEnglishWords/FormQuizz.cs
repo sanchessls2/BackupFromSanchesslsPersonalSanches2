@@ -52,7 +52,7 @@ namespace LearnEnglishWords
             TheGameMP.GetInstance().Report();
 
             string report = TheGameMP.GetInstance().GetReport();
-            Email.SendReport(report);
+            Email.SendReport(report,new List<MemoryStream>());
 
             button3.Enabled = false;
 
