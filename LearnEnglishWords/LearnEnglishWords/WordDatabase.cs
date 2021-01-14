@@ -74,7 +74,56 @@ Memories bring back, memories bring back you
 Yeah, yeah, yeah
 Yeah, yeah, yeah, yeah, yeah, doh, doh
 Memories bring back, memories bring back you";
-
+      public static string RayMillencolin = @"Hey, what the hell do you want me to do?
+Hey, does it look like I'm static to you?
+You might look twice, 'cause I'm moving
+Ok, you see that I can walk which is good
+But still you're trying to make me talk like you would
+Your intention's nice, you're improving
+For all you know, you are doing fine
+But I guess it shows
+That even jewellery that's fake do shine
+So shut your mouth now big boy
+I'm just myself not your toy
+It's in my nature to be changing
+Now is it so hard to see?
+You cannot make me to be
+Someone who never will be changing
+So what the hell do you want me to say?
+Another halting rhyme, another cliche?
+Well, you might be right, for this one time
+You take for granted, I'm your servant subdued
+It doesn't make sense to me but to you
+So here's one last bright make shift rhyme
+For all you know
+I'm just a fool
+But I guess that shows
+You can't judge a dog just by it's drool
+So shut your mouth now big boy
+I'm just myself not your toy
+It's in my nature to be changing
+Now is it so hard to see?
+You cannot make me to be
+Someone who never will be changing
+I'm losing you, for a big smile on my face
+You're nothing new, not hard to replace
+I'm losing you, but I'm not losing ground
+So Peekaboo! And you won't be around
+You won't be around
+You won't be around
+So shut your mouth now big boy
+I'm just myself not your toy
+It's in my nature to be changing
+Now is it so hard to see?
+You cannot make me to be
+Someone who never will be changing
+'Cause I change with time
+And that's not a crime
+Someone like you cannot derange me
+I change with time
+That's not a crime
+It's in my nature to be changing
+Changing";
         public static string OneU2 = @"Is it getting better?
 Or do you feel the same?
 Will it make it easier on you now?
@@ -3574,104 +3623,205 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "brothers", "", new List<ListType>() { ListType.OneU2 });
 
 
-            P_Adiciona_palavra(ListofWords, "here's", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "to", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "the", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "ones", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "that", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "we", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "got", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "cheers", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "wish", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "you", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "were", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "here", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "but", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "you're", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "not", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "cause", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "drinks", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "bring", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "back", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "all", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "memories", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "of", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "everything", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "we've", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "been", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "through", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "toast", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "today", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "lost", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "on", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "way", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "and", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "there's", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "a", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "time", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "i", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "remember", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "when", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "did", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "know", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "pain", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "believed", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "in", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "forever", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "would", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "stay", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "same", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "now", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "my", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "heart", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "feel", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "like", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "december", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "somebody", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "say", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "your", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "name", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "can't", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "reach", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "out", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "call", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "will", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "one", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "day", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "yeah", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "everybody", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "hurts", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "sometimes", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "someday", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "gon'", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "be", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "alright", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "go", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "raise", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "glass", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "never", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "felt", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "so", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "hatred", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "was", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "too", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "powerful", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "stop", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "ooh", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "an", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "ember", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "it's", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "lighting", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "up", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "dark", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "i'll", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "carry", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "these", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "torches", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "for", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "drop", "", new List<ListType>() { ListType.Marron5Memories });
-            P_Adiciona_palavra(ListofWords, "oh", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "here's", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "to", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "the", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "ones", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "that", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "we", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "got", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "cheers", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "wish", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "you", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "were", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "here", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "but", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "you're", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "not", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "cause", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "drinks", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "bring", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "back", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "all", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "memories", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "of", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "everything", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "we've", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "been", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "through", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "toast", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "today", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "lost", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "on", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "way", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "and", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "there's", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "a", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "time", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "i", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "remember", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "when", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "did", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "know", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "pain", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "believed", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "in", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "forever", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "would", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "stay", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "same", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "now", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "my", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "heart", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "feel", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "like", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "december", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "somebody", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "say", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "your", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "name", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "can't", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "reach", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "out", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "call", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "will", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "one", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "day", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "yeah", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "everybody", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "hurts", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "sometimes", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "someday", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "gon'", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "be", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "alright", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "go", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "raise", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "glass", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "never", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "felt", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "so", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "hatred", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "was", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "too", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "powerful", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "stop", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "ooh", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "an", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "ember", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "it's", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "lighting", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "up", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "dark", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "i'll", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "carry", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "these", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "torches", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "for", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "drop", "", new List<ListType>() { ListType.Marron5Memories });
+            //P_Adiciona_palavra(ListofWords, "oh", "", new List<ListType>() { ListType.Marron5Memories });
+
+            P_Adiciona_palavra(ListofWords, "here's", "aqui está", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "to", "para", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "the", "a", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "ones", "uns", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "that", "este", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "we", "nós", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "got", "obteve", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "cheers", "Felicidades", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "wish", "desejo", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "you", "vocês", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "were", "estavam", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "here", "aqui", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "but", "mas", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "you're", "você é", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "not", "não", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "cause", "causa", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "drinks", "bebidas", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "bring", "trazer", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "back", "de volta", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "all", "todos", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "memories", "recordações", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "of", "do", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "everything", "tudo", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "we've", "nós temos", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "been", "fui", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "through", "através", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "toast", "torrada", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "today", "hoje", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "lost", "perdido", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "on", "em", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "way", "caminho", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "and", "e", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "there's", "há", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "a", "uma", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "time", "Tempo", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "i", "Eu", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "remember", "lembrar", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "when", "quando", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "did", "fez", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "know", "conhecer", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "no", "não", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "pain", "dor", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "believed", "acreditava", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "in", "dentro", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "forever", "para sempre", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "would", "seria", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "stay", "fique", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "same", "mesmo", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "now", "agora", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "my", "meu", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "heart", "coração", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "feel", "sentir", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "like", "gostar", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "december", "dezembro", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "somebody", "alguém", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "say", "dizer", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "your", "seu", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "name", "nome", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "can't", "não pode", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "reach", "alcance", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "out", "Fora", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "call", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "will", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "one", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "day", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "yeah", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "everybody", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "hurts", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "sometimes", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "someday", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "gon'", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "be", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "alright", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "go", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "raise", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "glass", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "doo", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "never", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "felt", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "so", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "hatred", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "was", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "too", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "powerful", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "stop", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "ooh", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "an", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "ember", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "it's", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "lighting", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "up", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "dark", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "i'll", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "carry", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "these", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "torches", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "for", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "ya", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "drop", "", new List<ListType>() { ListType.RayMillencolin });
+            P_Adiciona_palavra(ListofWords, "oh", "", new List<ListType>() { ListType.RayMillencolin });
 
             /*
              * 0-- n conheco nenhum

@@ -40,52 +40,14 @@ namespace LearnEnglishWords
 
             return retorno;
         }
-        public static List<string> ListaPraPorNoPrograma()         
-        {
-            List<string> wordsOnly = new List<string>();
-            List<string> retorno = new List<string>();
-
-            //1 ao 27
-            for (int i = 1; i < 28; i++)
-            {
-
-                HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
-                string titulo;
-
-                //
-                using (WebClient client = new WebClient())
-                {
-                    string html = client.DownloadString("https://www.test-questions.com/ireland-driving-theory-test-"+i.ToString("00")+".php");
-                    doc.LoadHtml(html);
-                }
-
-                //Titulo
-                HtmlNode no = doc.DocumentNode.SelectSingleNode("//div[contains(@class, 'col-md-7 features-right')]");
-                titulo = no.InnerText;
-                P_POPULA(wordsOnly, titulo);                
-            }
-
-            foreach (var item in wordsOnly.Distinct())
-            {
-                P_ADICIONA_STRING_COM_TRAD(retorno,item);
-            }
-
-
-
-            return retorno;
-
-        }
-
+      
         private static void P_ADICIONA_STRING_COM_TRAD(List<string> retorno, string item)
         {             
             string teste = Translate(item);
 
             string str2 = teste;//"Clique em solicitar traducao para ver a traducao";
-                string str = "P_Adiciona_palavra(ListofWords,\""+ item +"\",\""+str2+""+"\""+ ", new List<ListType>() { ListType.OneU2 });";
+                string str = "P_Adiciona_palavra(ListofWords,\""+ item +"\",\""+str2+""+"\""+ ", new List<ListType>() { ListType.RayMillencolin });";
                 retorno.Add(str);
-            
-
-
         }
 
         public static string Translate(String word)

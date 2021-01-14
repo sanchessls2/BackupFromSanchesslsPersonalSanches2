@@ -27,7 +27,8 @@ namespace LearnEnglishWords
         public enum ListType
         {
             OneU2,
-            Marron5Memories,
+            RayMillencolin,
+            //Marron5Memories,
             //OthersideRedHot,
             //SayYouWontLetGoJamesArthur,
             //ArianaDangerousWoman,
