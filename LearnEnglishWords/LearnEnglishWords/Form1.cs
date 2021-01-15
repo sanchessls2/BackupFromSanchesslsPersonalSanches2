@@ -23,7 +23,7 @@ namespace LearnEnglishWords
     public partial class Form1 : XCoolForm.XCoolForm
     {
         private readonly XmlThemeLoader xtl = new XmlThemeLoader();
-        private readonly bool MusicaMais80 = false;
+        private bool MusicaMais80 = false;
         public Form1()
         {
             InitializeComponent();
@@ -33,7 +33,6 @@ namespace LearnEnglishWords
 
             typedWord.SelectionAlignment = HorizontalAlignment.Center;
 
-            this.MusicaMais80 = HDatabase.F_LiberaTraduzir(TheGame.GetInstance().GetTipo());
 
             P_ESPERA_RESPOSTA();
             
@@ -303,6 +302,8 @@ namespace LearnEnglishWords
             MessageBox.Show("Vamos Começar?");
 
             P_INCIALIZA_JOGO();
+            this.MusicaMais80 = HDatabase.F_LiberaTraduzir(TheGame.GetInstance().GetTipo());
+
 
             TheGame.GetInstance().AcertouPalavra += P_ACERTOU_PALAVRA;
             TheGame.GetInstance().FimDoJogo += P_FIM_DO_JOGO;
