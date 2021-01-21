@@ -101,6 +101,8 @@ namespace LearnEnglishWords
 
         public static bool F_LiberaTraduzir( ListType type)
         {
+            return true;
+            /*
             var obj = GetFile(type);
             if (obj.Count() > 0)
             {
@@ -110,6 +112,7 @@ namespace LearnEnglishWords
             {
                 return true;   
             }
+            */
         }
     }
 
