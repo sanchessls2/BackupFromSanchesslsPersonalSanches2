@@ -74,6 +74,55 @@ Memories bring back, memories bring back you
 Yeah, yeah, yeah
 Yeah, yeah, yeah, yeah, yeah, doh, doh
 Memories bring back, memories bring back you";
+        public static string SheLovesYouTheBeatles = @"She loves you, yeah, yeah, yeah
+She loves you, yeah, yeah, yeah
+She loves you, yeah, yeah, yeah, yeah
+
+You think you lost your love
+Well, I saw her yesterday
+It's you she's thinking of
+And she told me what to say
+
+She says she loves you
+And you know that can't be bad
+Yes, she loves you
+And you know you should be glad
+
+She said you hurt her so
+She almost lost her mind
+But now she says she knows
+You're not the hurting kind
+
+She says she loves you
+And you know that can't be bad
+Yes, she loves you
+And you know you should be glad, ooh
+
+She loves you, yeah, yeah, yeah
+She loves you, yeah, yeah, yeah
+And with a love like that
+You know you should be glad
+
+You know it's up to you
+I think it's only fair
+Pride can hurt you too
+Apologize to her
+
+Because she loves you
+And you know that can't be bad
+Yes, she loves you
+And you know you should be glad, ooh
+
+She loves you, yeah, yeah, yeah
+She loves you, yeah, yeah, yeah
+With a love like that
+You know you should be glad
+With a love like that
+You know you should be glad
+With a love like that
+You know you should be glad
+Yeah, yeah, yeah
+Yeah, yeah, yeah, yeah";
       public static string RayMillencolin = @"Hey, what the hell do you want me to do?
 Hey, does it look like I'm static to you?
 You might look twice, 'cause I'm moving
@@ -3840,6 +3889,64 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "with", "", new List<ListType>() { ListType.RayMillencolin });
             P_Adiciona_palavra(ListofWords, "crime", "", new List<ListType>() { ListType.RayMillencolin });
             P_Adiciona_palavra(ListofWords, "derange", "", new List<ListType>() { ListType.RayMillencolin });
+
+            P_Adiciona_palavra(ListofWords, "she", "ela", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "loves", "O amor é", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "you", "vocês", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "yeah", "sim", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "think", "pensar", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "lost", "perdido", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "your", "seu", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "love", "amor", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "well", "bem", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "i", "Eu", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "saw", "Serra", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "her", "dela", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "yesterday", "ontem", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "it's", "Está", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "she's", "ela é", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "thinking", "pensando", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "of", "do", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "and", "e", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "told", "contou", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "me", "mim", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "what", "o que", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "to", "para", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "say", "dizer", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "says", "diz", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "know", "conhecer", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "that", "este", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "can't", "não pode", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "be", "estar", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "bad", "ruim", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "yes", "sim", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "should", "devemos", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "glad", "feliz", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "said", "disse", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "hurt", "doeu", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "so", "então", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "almost", "quase", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "mind", "mente", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "but", "mas", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "now", "agora", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "knows", "conhece", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "you're", "você é", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "not", "não", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "the", "a", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "hurting", "machucando", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "kind", "tipo", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "ooh", "ooh", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "with", "com", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "a", "uma", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "like", "gostar", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "up", "acima", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "only", "só", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "fair", "justo", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "pride", "orgulho", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "can", "posso", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "too", "também", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "apologize", "peça desculpas", new List<ListType>() { ListType.SheLovesYouTheBeatles });
+            P_Adiciona_palavra(ListofWords, "because", "Porque", new List<ListType>() { ListType.SheLovesYouTheBeatles });
 
             /*
              * 0-- n conheco nenhum
