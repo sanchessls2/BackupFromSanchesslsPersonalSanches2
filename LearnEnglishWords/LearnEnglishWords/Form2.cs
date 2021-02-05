@@ -45,30 +45,31 @@ namespace LearnEnglishWords
         private void Form2_Load(object sender, EventArgs e)
         {
 
-            List<TheGame.ListType> ListaNegativa = new List<TheGame.ListType>() { 
-            TheGame.ListType.SheLovesYouTheBeatles,
-            TheGame.ListType.RayMillencolin,
-            TheGame.ListType.Marron5Memories,
-            TheGame.ListType.OthersideRedHot,
-            TheGame.ListType.SayYouWontLetGoJamesArthur,
-            TheGame.ListType.ArianaDangerousWoman,
-            TheGame.ListType.QueenLoveOfMyLife,
-            TheGame.ListType.SundayBloodySunday,
-            TheGame.ListType.Avril_Complicated,
-            TheGame.ListType.Beatles_Help,
-            TheGame.ListType.Breakaway,
-            TheGame.ListType.JackJohnsonBananaPancakes,
-            TheGame.ListType.AVRILNakedAvrilLavigne ,
-            TheGame.ListType.AVRILAnythingButOrdinary ,
-            TheGame.ListType.AVRILTomorrow,
+            List<TheGame.ListType> ListaNegativa = new List<TheGame.ListType>() {
+            //TheGame.ListType.AVRILImWithYouAvrilLavigne,
+            //TheGame.ListType.SheLovesYouTheBeatles,
+            //TheGame.ListType.RayMillencolin,
+            //TheGame.ListType.Marron5Memories,
+            //TheGame.ListType.OthersideRedHot,
+            //TheGame.ListType.SayYouWontLetGoJamesArthur,
+            //TheGame.ListType.ArianaDangerousWoman,
+            //TheGame.ListType.QueenLoveOfMyLife,
+            //TheGame.ListType.SundayBloodySunday,
+            //TheGame.ListType.Avril_Complicated,
+            //TheGame.ListType.Beatles_Help,
+            //TheGame.ListType.Breakaway,
+            //TheGame.ListType.JackJohnsonBananaPancakes,
+            //TheGame.ListType.AVRILNakedAvrilLavigne ,
+            //TheGame.ListType.AVRILAnythingButOrdinary ,
+            //TheGame.ListType.AVRILTomorrow,
             TheGame.ListType.Letter,
             TheGame.ListType.AndreWords,
             TheGame.ListType.NumberAndHour,
             TheGame.ListType.General,
             TheGame.ListType.HarryPotter1,
             TheGame.ListType.DriverLessons,
-            TheGame.ListType.Detran,
-            TheGame.ListType.AVRILImWithYouAvrilLavigne 
+            TheGame.ListType.Detran
+
             };
 
 
