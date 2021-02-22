@@ -41,9 +41,46 @@ namespace LearnEnglishWords
 
         public static bool HardModeOnBool;
 
+
         private void Form2_Load(object sender, EventArgs e)
         {
-            checkedListBox1.DataSource = Enum.GetValues(typeof(TheGame.ListType));
+
+            List<TheGame.ListType> ListaNegativa = new List<TheGame.ListType>() {
+            //TheGame.ListType.AVRILImWithYouAvrilLavigne,
+            //TheGame.ListType.SheLovesYouTheBeatles,
+            //TheGame.ListType.RayMillencolin,
+            //TheGame.ListType.Marron5Memories,
+            //TheGame.ListType.OthersideRedHot,
+            //TheGame.ListType.SayYouWontLetGoJamesArthur,
+            //TheGame.ListType.ArianaDangerousWoman,
+            //TheGame.ListType.QueenLoveOfMyLife,
+            //TheGame.ListType.SundayBloodySunday,
+            //TheGame.ListType.Avril_Complicated,
+            //TheGame.ListType.Beatles_Help,
+            //TheGame.ListType.Breakaway,
+            //TheGame.ListType.JackJohnsonBananaPancakes,
+            //TheGame.ListType.AVRILNakedAvrilLavigne ,
+            //TheGame.ListType.AVRILAnythingButOrdinary ,
+            //TheGame.ListType.AVRILTomorrow,
+            TheGame.ListType.Letter,
+            TheGame.ListType.AndreWords,
+            TheGame.ListType.NumberAndHour,
+            TheGame.ListType.General,
+            TheGame.ListType.HarryPotter1,
+            TheGame.ListType.DriverLessons,
+            TheGame.ListType.Detran
+
+            };
+
+
+
+            Array data = Enum
+    .GetValues(typeof(TheGame.ListType))
+    .Cast<TheGame.ListType>()
+    .Where(item => !ListaNegativa.Contains(item))
+    .ToArray();
+
+            checkedListBox1.DataSource = data;
 
             //for (int i = 0; i < checkedListBox1.Items.Count; i++)
             //{
