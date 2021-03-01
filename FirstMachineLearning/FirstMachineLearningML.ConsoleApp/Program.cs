@@ -20,7 +20,7 @@ namespace FirstMachineLearningML.ConsoleApp
                 Col5 = 63.8285F,
                 Col6 = 192.0399F,
                 Col7 = 79.7977F,
-            };
+            };            
 
             // Make a single prediction on the sample data and print results
             var predictionResult = ConsumeModel.Predict(sampleData);
