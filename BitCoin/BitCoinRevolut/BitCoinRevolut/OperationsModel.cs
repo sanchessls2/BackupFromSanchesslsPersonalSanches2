@@ -14,6 +14,7 @@ namespace BitCoinRevolut
         public double ValorComprado {get;set;}
         public double PercentualRevolut { get; set; }
         public Return ValuesToReturn { get; set; }
+        public double BitCoinsFee { get; internal set; }
 
         internal string TextResult()
         {
@@ -26,6 +27,7 @@ namespace BitCoinRevolut
             toReturn.Add("Valor Atual       :" + this.ValuesToReturn.ValorVenda.ToString(moneyFormat));
 
             toReturn.Add("Valor Comprado    :" + this.ValorCompradoFinal().ToString(moneyFormat));
+            toReturn.Add("Valor Comprado+Tax:" + this.ValorCompradoTax().ToString(moneyFormat));
             toReturn.Add("Valor Venda       :" + this.ValorVendaFinal().ToString(moneyFormat));
             toReturn.Add("Valor Revolut     :" + this.ValorRevolut().ToString(moneyFormat));
             toReturn.Add("Valor Final       :" + this.ValorFinal().ToString(moneyFormat));
@@ -34,6 +36,30 @@ namespace BitCoinRevolut
             toReturn.Add("\n");
 
             return String.Join("\n",toReturn);
+
+
+        }
+
+        internal string TextResultTotal(int count)
+        {
+            List<string> toReturn = new List<string>();
+
+            toReturn.Add("**TOTAL OF ("+count+")*********" + DateTime.Now.ToString() + "***********************");
+            toReturn.Add("Valor Comprado    : " + this.ValorComprado.ToString(moneyFormat));
+            toReturn.Add("Bit Coins Total   : " + this.BitCoinsComprado.ToString());
+            toReturn.Add("Percentual Revolut: " + (this.PercentualRevolut / 100).ToString(PercentualFormat));
+            toReturn.Add("Valor Atual       :" + this.ValuesToReturn.ValorVenda.ToString(moneyFormat));
+
+            toReturn.Add("Valor Comprado    :" + this.ValorCompradoFinal().ToString(moneyFormat));
+            toReturn.Add("Valor Comprado+Tax:" + this.ValorCompradoTax().ToString(moneyFormat));
+            toReturn.Add("Valor Venda       :" + this.ValorVendaFinal().ToString(moneyFormat));
+            toReturn.Add("Valor Revolut     :" + this.ValorRevolut().ToString(moneyFormat));
+            toReturn.Add("Valor Final       :" + this.ValorFinal().ToString(moneyFormat));
+            toReturn.Add("Valor Diff        :" + this.ValorDiff().ToString(moneyFormat));
+            toReturn.Add("Percentual Diff   :" + (this.PercentualDiff() / 100).ToString(PercentualFormat));
+            toReturn.Add("\n");
+
+            return String.Join("\n", toReturn);
 
 
         }
@@ -67,7 +93,11 @@ namespace BitCoinRevolut
 
         private double ValorCompradoFinal()
         {
-            return this.ValorComprado / this.BitCoinsComprado;
+            return this.ValorComprado / (this.BitCoinsComprado + this.BitCoinsFee);
+        }
+        private double ValorCompradoTax()
+        {
+            return this.ValorComprado / (this.BitCoinsComprado);
         }
     }
 

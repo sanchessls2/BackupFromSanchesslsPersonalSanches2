@@ -15,9 +15,33 @@ namespace BitCoinRevolut
 
             model.ValuesToReturn = new Return();
             model.ValuesToReturn.ValorVenda = btCalc.EUR.Sell;
-            //model.ValuesToReturn.ValorRevolut = model.ValuesToReturn.ValorVenda * model.PercentualRevolut / 100;
 
             return model;
+        }
+
+
+        internal static OperationsModel Calculate(List<OperationsModel> lists)
+        {
+            OperationsModel newReturn = new OperationsModel();
+
+            BitCoinModel btCalc = GetValue();
+            foreach (var item in lists)
+            {
+                item.ValuesToReturn = new Return();
+                item.ValuesToReturn.ValorVenda = btCalc.EUR.Sell;
+
+
+
+            }
+
+            newReturn.BitCoinsComprado = lists.Sum(x => x.BitCoinsComprado);
+            newReturn.BitCoinsFee = lists.Sum(x => x.BitCoinsFee);
+            newReturn.ValorComprado = lists.Sum(x => x.ValorComprado);
+            newReturn.ValuesToReturn = new Return() { ValorVenda = btCalc.EUR.Sell };
+            newReturn.PercentualRevolut = lists[0].PercentualRevolut;
+
+            return newReturn;
+
         }
 
         private static BitCoinModel GetValue()
@@ -31,5 +55,6 @@ namespace BitCoinRevolut
             return Newtonsoft.Json.JsonConvert.DeserializeObject<BitCoinModel>(data);
 
         }
+
     }
 }

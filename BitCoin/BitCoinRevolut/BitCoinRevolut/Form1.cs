@@ -26,17 +26,39 @@ namespace BitCoinRevolut
         {
             OperationsModel model = new OperationsModel
             {
-                BitCoinsComprado = 0.00324196,
+                BitCoinsComprado = 0.00036898,
+                BitCoinsFee = 0.00000959,
                 PercentualRevolut = 2.5,
-                ValorComprado = 131.61
+                ValorComprado = 15
             };
 
-            var objreturn = BitCoinCalculator.Calculate(model);
+            OperationsModel model2 = new OperationsModel
+            {
+                BitCoinsComprado = 0.00287298,
+                BitCoinsFee = 0.00007375,
+                PercentualRevolut = 2.5,
+                ValorComprado = 116.61
+            };
+
+            OperationsModel objreturn = BitCoinCalculator.Calculate(model);
+            OperationsModel objreturn2 = BitCoinCalculator.Calculate(model2);
+
+
+            OperationsModel objreturn3 = BitCoinCalculator.Calculate(new List<OperationsModel>(){ model, model2 } );
+
+
             if (checkBox1.Checked)
             {
                 richTextBox1.Text = "";
             }
             richTextBox1.Text = objreturn.TextResult() + richTextBox1.Text;
+            richTextBox1.Text = objreturn2.TextResult() + richTextBox1.Text;
+            richTextBox1.Text = objreturn3.TextResultTotal(2) + richTextBox1.Text;
+        }
+
+        private T List<T>()
+        {
+            throw new NotImplementedException();
         }
 
         private void button1_Click(object sender, EventArgs e)
