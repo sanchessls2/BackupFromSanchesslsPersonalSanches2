@@ -9,7 +9,7 @@ namespace BitCoinRevolut
     public class OperationsModel
     {
         public static string moneyFormat = "0.00€";
-        public static string PercentualFormat = "0.000%";
+        public static string PercentualFormat = "0.00%";
         public double BitCoinsComprado { get; set; }
         public double ValorComprado {get;set;}
         public double PercentualRevolut { get; set; }
@@ -31,8 +31,8 @@ namespace BitCoinRevolut
             toReturn.Add("Valor Venda       :" + this.ValorVendaFinal().ToString(moneyFormat));
             toReturn.Add("Valor Revolut     :" + this.ValorRevolut().ToString(moneyFormat));
             toReturn.Add("Valor Final       :" + this.ValorFinal().ToString(moneyFormat));
-            toReturn.Add("Valor Diff        :" + this.ValorDiff().ToString(moneyFormat));
-            toReturn.Add("Percentual Diff   :" + (this.PercentualDiff()/100).ToString(PercentualFormat));
+            toReturn.Add("Valor Diff        :" + PrintColor(this.ValorDiff(), moneyFormat));
+            toReturn.Add("Percentual Diff   :" + PrintColor((this.PercentualDiff() / 100), PercentualFormat));
             toReturn.Add("\n");
 
             return String.Join("\n",toReturn);
@@ -44,7 +44,7 @@ namespace BitCoinRevolut
         {
             List<string> toReturn = new List<string>();
 
-            toReturn.Add("**TOTAL OF ("+count+")*********" + DateTime.Now.ToString() + "***********************");
+            toReturn.Add("**TOTAL OF  "+count+" *********" + DateTime.Now.ToString() + "***********************");
             toReturn.Add("Valor Comprado    : " + this.ValorComprado.ToString(moneyFormat));
             toReturn.Add("Bit Coins Total   : " + this.BitCoinsComprado.ToString());
             toReturn.Add("Percentual Revolut: " + (this.PercentualRevolut / 100).ToString(PercentualFormat));
@@ -55,8 +55,43 @@ namespace BitCoinRevolut
             toReturn.Add("Valor Venda       :" + this.ValorVendaFinal().ToString(moneyFormat));
             toReturn.Add("Valor Revolut     :" + this.ValorRevolut().ToString(moneyFormat));
             toReturn.Add("Valor Final       :" + this.ValorFinal().ToString(moneyFormat));
-            toReturn.Add("Valor Diff        :" + this.ValorDiff().ToString(moneyFormat));
-            toReturn.Add("Percentual Diff   :" + (this.PercentualDiff() / 100).ToString(PercentualFormat));
+            toReturn.Add("Valor Diff        :" + PrintColor(this.ValorDiff(),moneyFormat));
+            toReturn.Add("Percentual Diff   :" + PrintColor((this.PercentualDiff() / 100),PercentualFormat));
+            toReturn.Add("\n");
+
+            return String.Join("\n", toReturn);
+
+
+        }
+
+        private string PrintColor(double value, string format)
+        {
+            if (value > 0)
+            {
+                return "(" + value.ToString(format) + ")";
+            }
+            else
+            {
+                if (value == 0)
+                {
+                    return "[" + value.ToString(format) + "]";
+                }
+                else
+                {
+                    return "<" + value.ToString(format) + ">";
+                }
+            }
+        }
+
+        internal string TextResultTotalResumo(int count)
+        {
+            List<string> toReturn = new List<string>();
+
+            toReturn.Add("**TOTAL OF " + count + " *********" + DateTime.Now.ToString() + "***********************");
+            toReturn.Add("Valor Comprado    : " + this.ValorComprado.ToString(moneyFormat));
+            toReturn.Add("Valor Venda Final :" + this.ValorFinal().ToString(moneyFormat));
+            toReturn.Add("Valor Diff        :" + PrintColor(this.ValorDiff(), moneyFormat));
+            toReturn.Add("Percentual Diff   :" + PrintColor((this.PercentualDiff() / 100), PercentualFormat));
             toReturn.Add("\n");
 
             return String.Join("\n", toReturn);
