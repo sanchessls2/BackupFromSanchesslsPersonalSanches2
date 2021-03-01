@@ -40,6 +40,9 @@ namespace BitCoinRevolut
                 ValorComprado = 116.61
             };
 
+            string valor1 = Newtonsoft.Json.JsonConvert.SerializeObject(model);
+            string valor2 = Newtonsoft.Json.JsonConvert.SerializeObject(model2);
+
             OperationsModel objreturn = BitCoinCalculator.Calculate(model);
             OperationsModel objreturn2 = BitCoinCalculator.Calculate(model2);
 
