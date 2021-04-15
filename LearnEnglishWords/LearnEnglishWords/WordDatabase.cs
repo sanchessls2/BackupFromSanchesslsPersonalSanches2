@@ -18,6 +18,65 @@ namespace LearnEnglishWords
 
     public class WordDatabase
     {
+
+        public static string WhitneyIHaveNothing = @"Share my life
+Take me for what I am
+'Cause I'll never change
+All my colors for you
+Take my love
+I'll never ask for too much
+Just all that you are
+And everything that you do
+I don't really need to look
+Very much further
+I don't want to have to go
+Where you don't follow
+I will hold it back again
+This passion inside
+Can't run from myself
+There's nowhere to hide
+Don't make me close one more door
+I don't want to hurt anymore
+Stay in my arms if you dare
+Or must I imagine you there
+Don't walk away from me
+I have nothing, nothing, nothing
+If I don't have you, you, you, you, you
+You see through
+Right to the heart of me
+You break down my walls
+With the strength of your love, hm
+I never knew
+Love like I've known it with you
+Will a memory survive
+One I can hold on to
+I don't really need to look
+Very much further
+I don't want to have to go
+Where you don't follow
+I will hold it back again
+This passion inside
+I can't run from myself
+There's nowhere to hide
+Your love I'll remember forever
+Don't make me close one more door
+I don't want to hurt anymore
+Stay in my arms if you dare
+Or must I imagine you there
+Don't walk away from me
+I have nothing, nothing, nothing
+Don't make me close one more door
+I don't want to hurt anymore
+Stay in my arms if you dare
+Or must I imagine you there
+Don't walk away from me
+No, don't walk away from me
+Don't you dare walk away from me
+I have nothing, nothing, nothing
+If I don't have you, you
+If I don't have you, oh you
+";
+
         public static string Marron5Memories = @"Here's to the ones that we got
 Cheers to the wish you were here, but you're not
 'Cause the drinks bring back all the memories
@@ -4094,6 +4153,104 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "rest", "", new List<ListType>() { ListType.Aerosmith_IDontWantToMissAThing });
             P_Adiciona_palavra(ListofWords, "time", "", new List<ListType>() { ListType.Aerosmith_IDontWantToMissAThing });
             P_Adiciona_palavra(ListofWords, "yeah", "", new List<ListType>() { ListType.Aerosmith_IDontWantToMissAThing });
+
+            P_Adiciona_palavra(ListofWords, "share", "compartilhar", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "my", "minha", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "life", "vida", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "take", "levar", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "me", "Eu", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "for", "para", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "what", "o que", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "i", "eu", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "am", "sou", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "cause", "causa", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "i'll", "doente", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "never", "Nunca", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "change", "mudança", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "all", "tudo", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "colors", "cores", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "you", "vocês", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "love", "amor", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "ask", "perguntar", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "too", "também", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "much", "Muito de", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "just", "somente", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "that", "naquela", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "are", "estão", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "and", "e", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "everything", "tudo", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "do", "Faz", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "don't", "não", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "really", "realmente", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "need", "necessidade", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "to", "para", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "look", "Veja", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "very", "muito", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "further", "avançar", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "want", "quer", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "have", "ter", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "go", "vai", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "where", "Onde", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "follow", "Segue", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "will", "vontade", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "hold", "segure", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "it", "isto", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "back", "voltar", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "again", "novamente", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "this", "esta", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "passion", "paixão", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "inside", "lado de dentro", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "can't", "não pode", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "run", "corre", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "from", "a partir de", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "myself", "Eu mesmo", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "there's", "há", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "nowhere", "lugar algum", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "hide", "ocultar", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "make", "faço", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "close", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "one", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "more", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "door", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "hurt", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "anymore", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "stay", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "in", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "arms", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "if", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "dare", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "or", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "must", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "imagine", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "there", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "walk", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "away", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "nothing", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "see", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "through", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "right", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "the", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "heart", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "of", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "break", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "down", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "walls", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "with", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "strength", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "your", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "hm", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "knew", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "like", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "i've", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "known", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "a", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "memory", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "survive", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "can", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "on", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "remember", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "forever", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+            P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.WhitneyIHaveNothing });            
 
             /*
              * 0-- n conheco nenhum

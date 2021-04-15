@@ -26,6 +26,7 @@ namespace LearnEnglishWords
         }
         public enum ListType
         {
+            WhitneyIHaveNothing,
             Aerosmith_IDontWantToMissAThing,
             OneU2,
             SheLovesYouTheBeatles,
