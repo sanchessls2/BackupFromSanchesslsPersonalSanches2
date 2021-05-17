@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-16"?>
+/Scan-192.168.4.84/[00000][192.168.4.84] <Stage1> A(Adapter1).S(Strategy1).P(Protocol1)
+/Scan-192.168.4.84/[00010][192.168.4.84] <Stage1> A(Adapter1).S(Strategy1).P(Protocol1)
+/Scan-192.168.4.84/[00020][192.168.4.84] <Stage1> A(Adapter1).S(Strategy1).P(Protocol1)
+/Scan-192.168.4.84/[00030][192.168.4.84] <Stage1> A(Adapter1).S(Strategy1).P(Protocol1)
+/Scan-192.168.4.84/[00040][192.168.4.84] <Stage1> A(Adapter1).S(Strategy1.1).P(Protocol1)
+/Scan-192.168.4.84/[00050][192.168.4.84] <Stage1> A(Adapter1).S(Strategy1.1).P(Protocol1)
+/Scan-192.168.4.84/[00060][192.168.4.84] <Stage1> A(Adapter1).S(Strategy1).P(Protocol1.1)
+/Scan-192.168.4.84/[00070][192.168.4.84] <Stage1> A(Adapter1).S(Strategy1).P(Protocol1.1)
+/Scan-192.168.4.84/[00080][192.168.4.84] <Stage2> A(Adapter2).S(Strategy2).P(Protocol2)
+/Scan-192.168.4.84/[00090][192.168.4.84] <Stage2> A(Adapter2).S(Strategy2).P(Protocol2)
+/Scan-192.168.4.84/[00100][192.168.4.84] <Stage3> A(Adapter3).S(Strategy3).P(Protocol3)
+/Scan-192.168.4.84/[00110][192.168.4.84] <Stage3> A(Adapter3).S(Strategy3).P(Protocol3)
+/Scan-192.168.4.84/[00120][192.168.4.84] <Stage3> A(Adapter1).S(Strategy3).P(Protocol1)
+/Scan-192.168.4.84/[00130][192.168.4.84] <Stage3> A(Adapter1).S(Strategy3).P(Protocol1)
+
+
+a
