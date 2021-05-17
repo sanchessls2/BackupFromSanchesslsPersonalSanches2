@@ -37,7 +37,7 @@ namespace CoronaGetData
         {
             Console.WriteLine("p_atualiza " + DateTime.Now);
 
-            browser = new CefSharp.WinForms.ChromiumWebBrowser("https://covid-19.geohive.ie/")
+            browser = new CefSharp.WinForms.ChromiumWebBrowser("https://www.etoro.com/people/sanchessls/portfolio")
             {
                 Dock = DockStyle.Fill,
             };

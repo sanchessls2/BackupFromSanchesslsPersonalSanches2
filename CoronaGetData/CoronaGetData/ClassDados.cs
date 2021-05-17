@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
@@ -8,38 +10,36 @@ namespace CoronaGetData
     {
         public static objDados GetDados(string hTML)
         {
-            objDados retorono = new objDados();            
+            objDados retorono = new objDados();
 
 
             try
             {
-                Regex newReg = new Regex("Vaccine Data up to.*COVID-19 14",RegexOptions.Singleline);
+                string OldItem = "";
+                List<string> lines = new List<string>(hTML.Split(new[] { '\n' }, StringSplitOptions.None));
 
-                var a = newReg.Match(hTML);
+                foreach (var item in lines.Where(x => x.Trim() != ""))
+                {                   
+                 
+                    
+                    
+                    if (OldItem == "Richard Stroud")
+                    {
+                        MessageBox.Show(item);
+                    }
 
-                if (a.Success)
-                {
-                    string text = a.Value;
-
-                    string[] lines = text.Split(new[] { '\n' },StringSplitOptions.None);
-
-                    retorono.datee = lines[1];
-                    retorono.total1dose = lines[3];
-                    retorono.total2dose = lines[5];
-                    retorono.totalgeral = lines[7];
-
-                    retorono.Success = true;
-
-
+                    OldItem = item;
                 }
 
+
+                
 
 
                 return retorono;
             }
             catch (Exception)
             {
-                return new objDados() { Success = false};
+                return new objDados() { Success = false };
             }
 
 

@@ -18,6 +18,41 @@ namespace LearnEnglishWords
 
     public class WordDatabase
     {
+        public static string TheReasonHoobastank = @"I'm not a perfect person
+There's many things I wish I didn't do
+But I continue learning
+I never meant to do those things to you
+And so, I have to say before I go
+That I just want you to know
+I've found a reason for me
+To change who I used to be
+A reason to start over new
+And the reason is you
+I'm sorry that I hurt you
+It's something I must live with everyday
+And all the pain I put you through
+I wish that I could take it all away
+And be the one who catches all your tears
+That's why I need you to hear
+I've found a reason for me
+To change who I used to be
+A reason to start over new
+And the reason is you
+And the reason is you
+And the reason is you
+And the reason is you
+I'm not a perfect person
+I never meant to do those things to you
+And so I have to say before I go
+That I just want you to know
+I've found a reason for me
+To change who I used to be
+A reason to start over new
+And the reason is you
+I've found a reason to show
+A side of me you didn't know
+A reason for all that I do
+And the reason is you";
 
         public static string WhitneyIHaveNothing = @"Share my life
 Take me for what I am
@@ -4250,7 +4285,79 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "on", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
             P_Adiciona_palavra(ListofWords, "remember", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
             P_Adiciona_palavra(ListofWords, "forever", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
-            P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.WhitneyIHaveNothing });            
+            P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.WhitneyIHaveNothing });
+
+            P_Adiciona_palavra(ListofWords, "i'm", "Eu estou", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "not", "não", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "a", "uma", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "perfect", "perfeito", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "person", "pessoa", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "there's", "há", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "many", "vários", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "things", "coisas", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "i", "eu", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "wish", "desejo", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "didn't", "não", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "do", "Faz", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "but", "mas", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "continue", "Prosseguir", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "learning", "Aprendendo", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "never", "Nunca", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "meant", "significou", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "to", "para", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "those", "Essa", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "you", "vocês", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "and", "e", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "so", "tão", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "have", "ter", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "say", "dizer", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "before", "antes", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "go", "vai", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "that", "naquela", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "just", "somente", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "want", "quer", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "know", "conhecer", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "i've", "eu tenho", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "found", "encontrado", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "reason", "razão", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "for", "para", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "me", "Eu", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "change", "mudança", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "who", "quem", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "used", "usava", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "be", "ser", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "start", "começar", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "over", "sobre", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "new", "novo", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "the", "a", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "is", "é", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "sorry", "Desculpe", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "hurt", "machucar", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "it's", "Está", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "something", "alguma coisa", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "must", "devo", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "live", "viver", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "with", "com", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "everyday", "todo dia", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "all", "tudo", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "pain", "dor", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "put", "colocar", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "through", "Através dos", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "could", "poderia", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "take", "", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "it", "", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "away", "", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "one", "", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "catches", "", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "your", "", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "tears", "", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "that's", "", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "why", "", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "need", "", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "hear", "", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "show", "", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "side", "", new List<ListType>() { ListType.TheReasonHoobastank });
+            P_Adiciona_palavra(ListofWords, "of", "", new List<ListType>() { ListType.TheReasonHoobastank });
 
             /*
              * 0-- n conheco nenhum
