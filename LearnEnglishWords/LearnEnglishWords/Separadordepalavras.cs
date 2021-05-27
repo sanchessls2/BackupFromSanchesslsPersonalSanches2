@@ -24,7 +24,7 @@ namespace LearnEnglishWords
             HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
 
                 //Titulo
-            P_POPULA(wordsOnly, WordDatabase.TheReasonHoobastank);
+            P_POPULA(wordsOnly, WordDatabase.EndOfWorld);
 
             int count = 0;
             int max = wordsOnly.Distinct().Count();
@@ -46,7 +46,7 @@ namespace LearnEnglishWords
             string teste = Translate(item);
 
             string str2 = teste;//"Clique em solicitar traducao para ver a traducao";
-                string str = "P_Adiciona_palavra(ListofWords,\""+ item +"\",\""+str2+""+"\""+ ", new List<ListType>() { ListType.TheReasonHoobastank });";
+                string str = "P_Adiciona_palavra(ListofWords,\""+ item +"\",\""+str2+""+"\""+ ", new List<ListType>() { ListType.EndOfWorld });";
                 retorno.Add(str);
         }
 

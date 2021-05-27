@@ -18,6 +18,140 @@ namespace LearnEnglishWords
 
     public class WordDatabase
     {
+        public static string MrJones = @"I was down at the New Amsterdam
+Staring at this yellow-haired girl
+Mr. Jones strikes up a conversation
+With a black-haired flamenco dancer
+You know she dances while his father plays guitar
+She's suddenly beautiful
+And we all want something beautiful
+Man, I wish I was beautiful
+So come dance the silence down through the morning
+Sha-la-la-la-la-la-la, yeah
+Uh huh, yeah
+Cut up, Maria
+Show me some of them Spanish dances
+Pass me a bottle, Mr. Jones
+Believe in me
+Help me believe in anything
+'Cause I wanna be someone who believes
+Yeah
+Mr. Jones and me
+Tell each other fairy tales
+And we stare at the beautiful women
+She's looking at you
+Ah, no, no, she's looking at me
+Smilin' in the bright lights
+Coming through in stereo
+When everybody loves you
+You can never be lonely
+Well, I'm gon' paint my picture
+Paint myself in blue and red and black and gray
+All of the beautiful colors are very, very meaningful
+Yeah, well, you know gray is my favorite color
+I felt so symbolic yesterday
+If I knew Picasso
+I would buy myself a gray guitar and play
+Mr. Jones and me
+Looked into the future
+Yeah, we stare at the beautiful women
+She's looking at you
+I don't think so
+She's looking at me
+Standing in the spotlight
+I bought myself a gray guitar
+When everybody loves me
+I will never be lonely
+I will never be lonely
+Said I'm never gonna be lonely
+I wanna be a lion
+Yeah, everybody wanna pass as cats
+We all wanna be big, big stars
+Yeah, but we got different reasons for that
+Believe in me
+'Cause I don't believe in anything
+And I wanna be someone to believe, to believe, to believe
+Yeah
+Mr. Jones and me
+Stumbling through the barrio
+Yeah, we stare at the beautiful women
+She's perfect for you
+Man, there's got to be somebody for me
+I wanna be Bob Dylan
+Mr. Jones wishes he was someone just a little more funky
+When everybody loves you, ah son
+That's just about as funky as you can be
+Mr. Jones and me
+Staring at the video
+When I look at the television, I want to see me
+Staring right back at me
+We all wanna be big stars
+But we don't know why, and we don't know how
+But when everybody loves me
+I'm wanna be just about as happy as I can be
+Mr. Jones and me
+We're gonna be big stars";
+
+
+        public static string EndOfWorld = @"That's great, it starts with an earthquake
+Birds and snakes, and aeroplanes
+And Lenny Bruce is not afraid
+Eye of a hurricane, listen to yourself churn
+World serves its own needs
+Don't mis-serve your own needs
+Speed it up a notch, speed, grunt, no, strength
+The ladder starts to clatter
+With a fear of height, down, height
+Wire in a fire, represent the seven games
+And a government for hire and a combat site
+Left her, wasn't coming in a hurry
+With the Furies breathing down your neck
+Team by team, reporters baffled, trumped, tethered, cropped
+Look at that low plane, fine, then
+Uh oh, overflow, population, common group
+But it'll do, save yourself, serve yourself
+World serves its own needs, listen to your heart bleed
+Tell me with the Rapture and the reverent in the right, right
+You vitriolic, patriotic, slam fight, bright light
+Feeling pretty psyched
+It's the end of the world as we know it
+It's the end of the world as we know it
+It's the end of the world as we know it and I feel fine
+Six o'clock, T.V. hour, don't get caught in foreign tower
+Slash and burn, return, listen to yourself churn
+Lock him in uniform, book burning, bloodletting
+Every motive escalate, automotive incinerate
+Light a candle, light a motive, step down, step down
+Watch your heel crush, crush, uh oh
+This means no fear, cavalier, renegade and steering clear
+A tournament, a tournament, a tournament of lies
+Offer me solutions, offer me alternatives and I decline
+It's the end of the world as we know it (I had some time alone)
+It's the end of the world as we know it (I had some time alone)
+It's the end of the world as we know it and I feel fine (time I had some time alone)
+I feel fine (I feel fine)
+It's the end of the world as we know it (time I had some time alone)
+It's the end of the world as we know it (time I had some time alone)
+It's the end of the world as we know it and I feel fine (time I had some time alone)
+The other night I drifted nice continental drift divide
+Mountains sit in a line, Leonard Bernstein
+Leonid Brezhnev, Lenny Bruce and Lester Bangs
+Birthday party, cheesecake, jellybean, boom
+You symbiotic, patriotic, slam but neck, right, right
+It's the end of the world as we know it (time I had some time alone)
+It's the end of the world as we know it (time I had some time alone)
+It's the end of the world as we know it and I feel fine (time I had some time alone)
+It's the end of the world as we know it
+It's the end of the world as we know it
+It's the end of the world as we know it and I feel fine (time I had some time alone)
+It's the end of the world as we know it (time I had some time alone)
+It's the end of the world as we know it (time I had some time alone)
+It's the end of the world as we know it and I feel fine (time I had some time alone)
+It's the end of the world as we know it (time I had some time alone)
+It's the end of the world as we know it (time I had some time alone)
+It's the end of the world as we know it and I feel fine (time I had some time alone)";
+
+
         public static string TheReasonHoobastank = @"I'm not a perfect person
 There's many things I wish I didn't do
 But I continue learning
@@ -4358,6 +4492,352 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "show", "", new List<ListType>() { ListType.TheReasonHoobastank });
             P_Adiciona_palavra(ListofWords, "side", "", new List<ListType>() { ListType.TheReasonHoobastank });
             P_Adiciona_palavra(ListofWords, "of", "", new List<ListType>() { ListType.TheReasonHoobastank });
+
+            P_Adiciona_palavra(ListofWords, "i", "eu", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "was", "estava", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "down", "baixa", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "at", "no", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "the", "a", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "new", "novo", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "amsterdam", "amsterdam", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "staring", "encarando", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "this", "esta", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "yellow-haired", "de cabelo amarelo", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "girl", "menina", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "mr", "Sr", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "jones", "Jones", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "strikes", "greves", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "up", "pra cima", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "a", "uma", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "conversation", "conversação", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "with", "com", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "black-haired", "cabelos negros", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "flamenco", "flamenco", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "dancer", "dançarino", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "you", "vocês", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "know", "conhecer", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "she", "ela", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "dances", "danças", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "while", "enquanto", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "his", "seu", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "father", "pai", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "plays", "tocam", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "guitar", "guitarra", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "she's", "ela é", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "suddenly", "De repente", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "beautiful", "bela", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "and", "e", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "we", "nós", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "all", "tudo", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "want", "quer", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "something", "alguma coisa", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "man", "homem", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "wish", "desejo", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "so", "tão", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "come", "venha", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "dance", "dança", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "silence", "silêncio", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "through", "Através dos", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "morning", "manhã", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "yeah", "sim", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "uh", "Uh", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "huh", "Hã", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "cut", "cortar", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "maria", "maria", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "show", "mostrar", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "me", "Eu", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "some", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "of", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "them", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "spanish", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "pass", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "bottle", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "believe", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "in", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "help", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "anything", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "cause", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "wanna", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "be", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "someone", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "who", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "believes", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "tell", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "each", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "other", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "fairy", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "tales", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "stare", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "women", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "looking", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "ah", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "smiling", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "bright", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "lights", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "coming", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "stereo", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "when", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "everybody", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "loves", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "can", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "never", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "lonely", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "well", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "i'm", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "gon'", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "paint", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "my", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "picture", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "myself", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "blue", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "red", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "black", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "gray", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "colors", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "are", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "very", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "meaningful", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "is", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "favorite", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "color", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "felt", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "symbolic", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "yesterday", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "if", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "knew", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "picasso", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "would", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "buy", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "play", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "looked", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "into", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "future", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "don't", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "think", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "standing", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "spotlight", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "bought", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "will", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "said", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "gonna", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "lion", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "as", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "cats", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "big", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "stars", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "but", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "got", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "different", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "reasons", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "for", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "that", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "to", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "stumbling", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "barrio", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "perfect", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "there's", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "somebody", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "bob", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "dylan", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "wishes", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "he", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "just", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "little", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "more", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "funky", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "son", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "that's", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "about", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "video", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "look", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "television", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "see", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "right", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "back", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "why", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "how", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "happy", "", new List<ListType>() { ListType.MrJones });
+            P_Adiciona_palavra(ListofWords, "we're", "", new List<ListType>() { ListType.MrJones });
+
+            P_Adiciona_palavra(ListofWords, "that's", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "great", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "it", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "starts", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "with", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "an", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "earthquake", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "birds", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "and", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "snakes", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "aeroplanes", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "lenny", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "bruce", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "is", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "not", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "afraid", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "eye", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "of", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "a", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "hurricane", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "listen", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "to", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "yourself", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "churn", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "world", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "serves", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "its", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "own", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "needs", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "don't", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "mis-serve", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "your", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "speed", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "up", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "notch", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "grunt", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "strength", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "the", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "ladder", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "clatter", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "fear", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "height", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "down", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "wire", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "in", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "fire", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "represent", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "seven", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "games", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "government", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "for", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "hire", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "combat", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "site", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "left", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "her", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "wasn't", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "coming", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "hurry", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "furies", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "breathing", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "neck", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "team", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "by", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "reporters", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "baffled", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "trumped", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "tethered", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "cropped", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "look", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "at", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "that", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "low", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "plane", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "fine", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "then", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "uh", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "oh", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "overflow", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "population", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "common", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "group", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "but", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "it'll", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "do", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "save", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "serve", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "heart", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "bleed", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "tell", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "me", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "rapture", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "reverent", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "right", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "you", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "vitriolic", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "patriotic", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "slam", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "fight", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "bright", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "light", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "feeling", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "pretty", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "psyched", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "it's", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "end", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "as", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "we", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "know", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "i", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "feel", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "six", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "o'clock", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "t", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "v", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "hour", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "get", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "caught", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "foreign", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "tower", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "slash", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "burn", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "return", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "lock", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "him", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "uniform", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "book", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "burning", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "bloodletting", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "every", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "motive", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "escalate", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "automotive", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "incinerate", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "candle", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "step", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "watch", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "heel", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "crush", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "this", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "means", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "cavalier", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "renegade", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "steering", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "clear", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "tournament", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "lies", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "offer", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "solutions", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "alternatives", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "decline", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "had", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "some", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "time", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "alone", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "other", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "night", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "drifted", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "nice", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "continental", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "drift", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "divide", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "mountains", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "sit", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "line", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "leonard", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "bernstein", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "leonid", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "brezhnev", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "lester", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "bangs", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "birthday", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "party", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "cheesecake", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "jellybean", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "boom", "", new List<ListType>() { ListType.EndOfWorld });
+            P_Adiciona_palavra(ListofWords, "symbiotic", "", new List<ListType>() { ListType.EndOfWorld });
 
             /*
              * 0-- n conheco nenhum
