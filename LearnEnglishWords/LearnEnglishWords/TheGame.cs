@@ -26,6 +26,7 @@ namespace LearnEnglishWords
         }
         public enum ListType
         {
+            TheClimb,
             MrJones,
             EndOfWorld,
             TheReasonHoobastank,

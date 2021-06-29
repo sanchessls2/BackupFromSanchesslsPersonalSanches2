@@ -18,6 +18,55 @@ namespace LearnEnglishWords
 
     public class WordDatabase
     {
+        public static string TheClimb = @"I can almost see it
+That dream I'm dreaming
+But, there's a voice inside my head saying
+You'll never reach it
+Every step I'm taking
+Every move I make feels
+Lost with no direction
+My faith is shaking
+But I, I gotta keep trying
+Gotta keep my head held high
+There's always gonna be another mountain
+I'm always gonna wanna make it move
+Always gonna be an uphill battle
+Sometimes I'm gonna have to lose
+Ain't about how fast I get there
+Ain't about what's waiting on the other side
+It's the climb
+The struggles I'm facing
+The chances I'm taking
+Sometimes might knock me down, but
+No, I'm not breaking
+I may not know it
+But these are the moments, that
+I'm gonna remember most, yeah
+Just gotta keep going
+And I, I gotta be strong
+Just keep pushing on, 'cause
+There's always gonna be another mountain
+I'm always gonna wanna make it move
+Always gonna be an uphill battle
+Sometimes I'm gonna have to lose
+Ain't about how fast I get there
+Ain't about what's waiting on the other side
+It's the climb
+Yeah
+There's always gonna be another mountain
+I'm always gonna wanna make it move
+Always gonna be an uphill battle
+Sometimes you're gonna have to lose
+Ain't about how fast I get there
+Ain't about what's waiting on the other side
+It's the climb
+Yeah, yeah
+Keep on moving, keep climbing
+Keep the faith, baby
+It's all about, it's all about the climb
+Keep your faith, keep your faith
+Whoa";
+
         public static string MrJones = @"I was down at the New Amsterdam
 Staring at this yellow-haired girl
 Mr. Jones strikes up a conversation
@@ -4838,6 +4887,103 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "jellybean", "", new List<ListType>() { ListType.EndOfWorld });
             P_Adiciona_palavra(ListofWords, "boom", "", new List<ListType>() { ListType.EndOfWorld });
             P_Adiciona_palavra(ListofWords, "symbiotic", "", new List<ListType>() { ListType.EndOfWorld });
+
+            P_Adiciona_palavra(ListofWords, "i", "eu", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "can", "posso", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "almost", "quase", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "see", "Vejo", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "it", "isto", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "that", "naquela", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "dream", "Sonhe", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "i'm", "Eu estou", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "dreaming", "sonhando", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "but", "mas", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "there's", "há", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "a", "uma", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "voice", "voz", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "inside", "lado de dentro", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "my", "minha", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "head", "cabeça", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "saying", "dizendo", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "you'll", "você vai", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "never", "Nunca", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "reach", "alcançar", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "every", "cada", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "step", "Passo", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "taking", "tirando", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "move", "mover", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "make", "faço", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "feels", "sentimentos", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "lost", "perdido", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "with", "com", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "no", "não", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "direction", "direção", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "faith", "fé", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "is", "é", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "shaking", "tremendo", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "gotta", "Tenho que", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "keep", "guarda", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "trying", "tentando", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "held", "guardado", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "high", "Alto", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "always", "sempre", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "gonna", "vai", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "be", "ser", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "another", "outro", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "mountain", "montanha", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "wanna", "quer", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "an", "a", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "uphill", "morro acima", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "battle", "batalha", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "sometimes", "as vezes", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "have", "ter", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "to", "para", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "lose", "perder", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "aingt", "aingt", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "about", "cerca de", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "how", "Como as", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "fast", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "get", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "there", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "what's", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "waiting", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "on", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "the", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "other", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "side", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "it's", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "climb", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "struggles", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "facing", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "I Love you natalia", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "chances", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "might", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "knock", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "me", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "down", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "not", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "breaking", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "may", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "know", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "these", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "are", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "moments", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "remember", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "most", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "yeah", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "just", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "going", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "and", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "strong", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "pushing", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "'cause", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "you're", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "moving", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "climbing", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "baby", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "all", "", new List<ListType>() { ListType.TheClimb });
+            P_Adiciona_palavra(ListofWords, "your", "", new List<ListType>() { ListType.TheClimb });
+
 
             /*
              * 0-- n conheco nenhum
