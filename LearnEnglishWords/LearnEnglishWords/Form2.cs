@@ -47,6 +47,7 @@ namespace LearnEnglishWords
 
             List<TheGame.ListType> ListaNegativa = new List<TheGame.ListType>() {
 
+            //TheGame.ListType.SetTheRainOnFire,
             //TheGame.ListType.TheClimb,
             //TheGame.ListType.MrJones,
             //TheGame.ListType.EndOfWorld

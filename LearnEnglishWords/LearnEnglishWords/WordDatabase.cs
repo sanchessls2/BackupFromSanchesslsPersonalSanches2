@@ -18,6 +18,63 @@ namespace LearnEnglishWords
 
     public class WordDatabase
     {
+        public static string SetTheRainOnFire = @"I let it fall, my heart
+And as it fell, you rose to claim it
+It was dark and I was over
+Until you kissed my lips and you saved me
+My hands, they were strong
+But my knees were far too weak
+To stand in your arms
+Without falling to your feet
+But there's a side to you
+That I never knew, never knew
+All the things you'd say
+They were never true, never true
+And the games you'd play
+You would always win, always win
+But I set fire to the rain
+Watched it pour as I touched your face
+Well, it burned while I cried
+'Cause I heard it screaming out your name
+Your name
+When laying with you
+I could stay there
+Close my eyes, feel you here forever
+You and me together, nothing is better
+'Cause there's a side to you
+That I never knew, never knew
+All the things you'd say
+They were never true, never true
+And the games you'd play
+You would always win, always win
+But I set fire to the rain
+Watched it pour as I touched your face
+Well, it burned while I cried
+'Cause I heard it screaming out your name
+Your name
+I set fire to the rain
+And I threw us into the flames
+When we fell, something died
+'Cause I knew that that was the last time
+The last time
+Sometimes I wake up by the door
+That heart you caught must be waiting for you
+Even now when we're already over
+I can't help myself from looking for you
+I set fire to the rain
+Watched it pour as I touch your face
+Well, it burned while I cried
+'Cause I heard it screaming out your name
+Your name
+I set fire to the rain
+And I threw us into the flames
+When we fell, something died
+'Cause I knew that that was the last time
+The last time, oh
+Oh, no
+Let it burn, oh-oh-oh
+Let it burn
+Let it burn";
         public static string TheClimb = @"I can almost see it
 That dream I'm dreaming
 But, there's a voice inside my head saying
@@ -4983,6 +5040,123 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "baby", "", new List<ListType>() { ListType.TheClimb });
             P_Adiciona_palavra(ListofWords, "all", "", new List<ListType>() { ListType.TheClimb });
             P_Adiciona_palavra(ListofWords, "your", "", new List<ListType>() { ListType.TheClimb });
+
+            P_Adiciona_palavra(ListofWords, "i", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "let", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "it", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "fall", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "my", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "heart", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "and", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "as", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "fell", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "you", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "rose", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "to", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "claim", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "was", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "dark", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "over", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "until", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "kissed", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "lips", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "saved", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "me", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "hands", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "they", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "were", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "strong", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "but", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "knees", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "far", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "too", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "weak", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "stand", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "in", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "your", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "arms", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "without", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "falling", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "feet", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "there's", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "a", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "side", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "that", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "never", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "knew", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "all", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "the", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "things", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "you'd", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "say", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "true", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "games", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "play", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "would", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "always", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "win", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "set", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "fire", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "rain", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "watched", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "pour", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "touched", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "face", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "well", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "burned", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "while", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "cried", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "cause", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "heard", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "screaming", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "out", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "name", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "when", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "laying", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "with", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "could", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "stay", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "there", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "close", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "eyes", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "feel", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "here", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "forever", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "together", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "nothing", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "is", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "better", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "threw", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "us", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "into", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "flames", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "we", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "something", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "died", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "last", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "time", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "sometimes", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "wake", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "up", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "by", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "door", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "caught", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "must", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "be", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "waiting", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "for", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "even", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "now", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "we're", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "already", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "can't", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "help", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "myself", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "from", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "looking", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "touch", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.SetTheRainOnFire });
+            P_Adiciona_palavra(ListofWords, "burn", "", new List<ListType>() { ListType.SetTheRainOnFire });
 
 
             /*
