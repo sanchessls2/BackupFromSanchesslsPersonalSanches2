@@ -39,7 +39,7 @@ namespace LearnEnglishWords
             chart2.Legends.Add(new Legend());
             chart2.Series.Clear();
             chart2.ChartAreas[0].AxisY.Maximum = 100;
-            chart2.ChartAreas[0].AxisY.Minimum = 0;
+            chart2.ChartAreas[0].AxisY.Minimum = 70;
             chart2.ChartAreas[0].AxisX.Minimum = 1;
             chart2.ChartAreas[0].AxisY.Interval = 10;
 
