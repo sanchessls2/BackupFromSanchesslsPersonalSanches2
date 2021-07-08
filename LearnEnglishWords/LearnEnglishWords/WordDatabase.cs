@@ -18,6 +18,49 @@ namespace LearnEnglishWords
 
     public class WordDatabase
     {
+
+        public static string HeadAboveWater = @"I gotta keep the calm before the storm
+I don't want less, I don't want more
+Must bar the windows and the doors
+To keep me safe, to keep me warm
+Yeah, my life is what I'm fighting for
+Can't part the sea, can't reach the shore
+And my voice becomes the driving force
+I won't let this pull me overboard
+God, keep my head above water
+Don't let me drown, it gets harder
+I'll meet you there at the altar
+As I fall down to my knees
+Don't let me drown, drown, drown
+Don't let me, don't let me, don't let me drown
+So pull me up from down below
+'Cause I'm underneath the undertow
+Come dry me off and hold me close
+I need you now, I need you most
+God, keep my head above water
+Don't let me drown, it gets harder
+I'll meet you there at the altar
+As I fall down to my knees
+Don't let me drown, drown, drown
+Don't let me, don't let me, don't let me drown
+Don't let me drown, drown, drown
+Don't let me, don't let me, don't let me drown (Keep my head above water, above water)
+And I can't see in the stormy weather
+I can't seem to keep it all together
+And I, I can't swim the ocean like this forever
+And I can't breathe
+God, keep my head above water
+I lose my breath at the bottom
+Come rescue me, I'll be waiting
+I'm too young to fall asleep
+God, keep my head above water
+Don't let me drown, it gets harder
+I'll meet you there at the altar
+As I fall down to my knees
+Don't let me drown (Don't let me, don't let me drown)
+Don't let me drown (Don't let me, don't let me drown)
+Don't let me drown (Don't let me, don't let me drown)
+And keep my head above water, above water";
         public static string SetTheRainOnFire = @"I let it fall, my heart
 And as it fell, you rose to claim it
 It was dark and I was over
@@ -5157,6 +5200,103 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "touch", "", new List<ListType>() { ListType.SetTheRainOnFire });
             P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.SetTheRainOnFire });
             P_Adiciona_palavra(ListofWords, "burn", "", new List<ListType>() { ListType.SetTheRainOnFire });
+
+            P_Adiciona_palavra(ListofWords, "i", "eu", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "gotta", "Tenho que", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "keep", "guarda", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "the", "a", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "calm", "calma", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "before", "antes", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "storm", "tempestade", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "don't", "não", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "want", "quer", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "less", "menos", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "more", "mais", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "must", "devo", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "bar", "bar", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "windows", "janelas", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "and", "e", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "doors", "portas", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "to", "para", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "me", "Eu", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "safe", "seguro", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "warm", "caloroso", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "yeah", "sim", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "my", "minha", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "life", "vida", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "is", "é", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "what", "o que", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "i'm", "Eu estou", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "fighting", "brigando", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "for", "para", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "can't", "não pode", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "part", "papel", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "sea", "mar", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "reach", "alcançar", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "shore", "Costa", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "voice", "voz", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "becomes", "torna-se", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "driving", "dirigindo", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "force", "força", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "won't", "não vai", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "let", "deixar", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "this", "esta", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "pull", "puxar", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "overboard", "ao mar", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "god", "Deus", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "head", "cabeça", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "above", "acima de", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "water", "agua", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "drown", "afogar", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "it", "isto", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "gets", "pega", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "harder", "mais difíceis", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "i'll", "doente", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "meet", "Conheçer", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "you", "vocês", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "there", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "at", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "altar", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "as", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "fall", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "down", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "knees", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "so", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "up", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "from", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "below", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "cause", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "underneath", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "undertow", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "come", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "dry", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "off", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "hold", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "close", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "need", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "now", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "most", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "see", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "in", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "stormy", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "weather", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "seem", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "all", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "together", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "swim", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "ocean", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "like", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "forever", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "breathe", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "lose", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "breath", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "bottom", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "rescue", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "be", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "waiting", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "too", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "young", "", new List<ListType>() { ListType.HeadAboveWater });
+            P_Adiciona_palavra(ListofWords, "asleep", "", new List<ListType>() { ListType.HeadAboveWater });
 
 
             /*
