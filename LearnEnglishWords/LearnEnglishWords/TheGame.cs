@@ -26,6 +26,7 @@ namespace LearnEnglishWords
         }
         public enum ListType
         {
+            RollingInTheDeep,
             HeadAboveWater,
             SetTheRainOnFire,
             TheClimb,

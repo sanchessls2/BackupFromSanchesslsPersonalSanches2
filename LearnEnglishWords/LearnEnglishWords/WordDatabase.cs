@@ -18,7 +18,77 @@ namespace LearnEnglishWords
 
     public class WordDatabase
     {
-
+        public static string RollingInTheDeep = @"There's a fire starting in my heart
+Reaching a fever pitch and it's bringing me out the dark
+Finally, I can see you crystal clear
+Go ahead and sell me out and I'll lay your ship bare
+See how I'll leave with every piece of you
+Don't underestimate the things that I will do
+There's a fire starting in my heart
+Reaching a fever pitch and it's bring me out the dark
+The scars of your love remind me of us
+They keep me thinking that we almost had it all
+The scars of your love, they leave me breathless
+I can't help feeling
+We could have had it all
+(You're gonna wish you never had met me)
+Rolling in the deep
+(Tears are gonna fall, rolling in the deep)
+You had my heart inside of your hands
+(You're gonna wish you never had met me)
+And you played it to the beat
+(Tears are gonna fall, rolling in the deep)
+Baby, I have no story to be told
+But I've heard one on you and I'm gonna make your head burn
+Think of me in the depths of your despair
+Make a home down there as mine sure won't be shared
+The scars of your love remind me of us
+(Tears are gonna fall, rolling in the deep)
+They keep me thinking that we almost had it all
+(You're gonna wish you never had met me)
+The scars of your love, they leave me breathless
+(Tears are gonna fall, rolling in the deep)
+I can't help feeling
+We could have had it all
+(You're gonna wish you never had met me)
+Rolling in the deep
+(Tears are gonna fall, rolling in the deep)
+You had my heart inside of your hands
+(You're gonna wish you never had met me)
+And you played it to the beat
+(Tears are gonna fall, rolling in the deep)
+Could have had it all
+Rolling in the deep
+You had my heart inside of your hands
+But you played it with a beating
+Throw your soul through every open door
+Count your blessings to find what you look for
+Turn my sorrow into treasured gold
+You'll pay me back in kind and reap just what you've sown
+We could have had it all
+(Tears are gonna fall, rolling in the deep)
+We could have had it all
+(You're gonna wish you never had met me)
+It all, it all, it all
+(Tears are gonna fall, rolling in the deep)
+We could have had it all
+(You're gonna wish you never had met me)
+Rolling in the deep
+(Tears are gonna fall, rolling in the deep)
+You had my heart inside of your hands
+(You're gonna wish you never had met me)
+And you played it to the beat
+(Tears are gonna fall, rolling in the deep)
+We could have had it all
+(You're gonna wish you never had met me)
+Rolling in the deep
+(Tears are gonna fall, rolling in the deep)
+You had my heart inside of your hands
+(You're gonna wish you never had met me)
+But you played it
+You played it
+You played it
+You played it to the beat";
         public static string HeadAboveWater = @"I gotta keep the calm before the storm
 I don't want less, I don't want more
 Must bar the windows and the doors
@@ -4105,6 +4175,135 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "sisters", "", new List<ListType>() { ListType.OneU2 });
             P_Adiciona_palavra(ListofWords, "brothers", "", new List<ListType>() { ListType.OneU2 });
 
+            P_Adiciona_palavra(ListofWords, "there's", "há", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "a", "uma", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "fire", "incêndio", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "starting", "iniciando", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "in", "dentro", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "my", "minha", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "heart", "coração", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "reaching", "chegando", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "fever", "febre", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "pitch", "tom", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "and", "e", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "it's", "Está", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "bringing", "trazendo", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "me", "Eu", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "out", "Fora", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "the", "a", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "dark", "Sombrio", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "finally", "finalmente", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "i", "eu", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "can", "posso", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "see", "Vejo", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "you", "vocês", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "crystal", "cristal", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "clear", "Claro", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "go", "vai", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "ahead", "à frente", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "sell", "vender", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "i'll", "doente", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "lay", "colocar", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "your", "sua", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "ship", "navio", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "bare", "nu", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "how", "Como as", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "leave", "sair", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "with", "com", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "every", "cada", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "piece", "Artigo", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "of", "de", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "don't", "não", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "underestimate", "subestimar", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "things", "coisas", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "that", "naquela", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "will", "vontade", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "do", "Faz", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "bring", "trazer", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "scars", "cicatrizes", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "love", "amor", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "remind", "lembrar", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "us", "nós", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "they", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "keep", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "thinking", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "we", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "almost", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "had", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "it", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "all", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "breathless", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "can't", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "help", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "feeling", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "could", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "have", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "you're", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "gonna", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "wish", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "never", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "met", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "rolling", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "deep", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "tears", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "are", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "fall", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "inside", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "hands", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "played", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "to", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "beat", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "baby", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "story", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "be", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "told", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "but", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "i've", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "heard", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "one", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "on", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "i'm", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "make", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "head", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "burn", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "think", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "depths", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "despair", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "home", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "down", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "there", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "as", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "mine", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "sure", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "won't", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "shared", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "beating", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "throw", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "soul", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "through", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "open", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "door", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "count", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "blessings", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "find", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "what", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "look", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "for", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "turn", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "sorrow", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "into", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "treasured", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "gold", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "you'll", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "pay", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "back", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "kind", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "reap", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "just", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "you've", "", new List<ListType>() { ListType.RollingInTheDeep });
+            P_Adiciona_palavra(ListofWords, "sown", "", new List<ListType>() { ListType.RollingInTheDeep });
+
 
             P_Adiciona_palavra(ListofWords, "here's", "", new List<ListType>() { ListType.Marron5Memories });
             P_Adiciona_palavra(ListofWords, "to", "", new List<ListType>() { ListType.Marron5Memories });
@@ -5297,6 +5496,8 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "too", "", new List<ListType>() { ListType.HeadAboveWater });
             P_Adiciona_palavra(ListofWords, "young", "", new List<ListType>() { ListType.HeadAboveWater });
             P_Adiciona_palavra(ListofWords, "asleep", "", new List<ListType>() { ListType.HeadAboveWater });
+
+
 
 
             /*
