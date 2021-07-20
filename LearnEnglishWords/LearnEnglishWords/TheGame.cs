@@ -62,6 +62,8 @@ namespace LearnEnglishWords
             DriverLessons,
             Detran,
             AVRILImWithYouAvrilLavigne,
+            PalavrasErradas,
+            PalavrasErradasDATABASE
         }
 
         internal ListType GetTipo()
@@ -135,6 +137,12 @@ namespace LearnEnglishWords
             TheGameInstance.AdicionaReport("Start no Jogo");
             Status = GameStatus.Started;
             LoadDatabase(Form2.ListaEscolhada.First());
+
+            if (this.Database.Words.Count <= 0)
+            {
+                throw new Exception("Nenhuma palavra nessa escolha.");
+            }
+
             this.HardModeOn = Form2.HardModeOn();
 
             TheGameInstance.AdicionaReport("Selecionou : ");
@@ -158,8 +166,18 @@ namespace LearnEnglishWords
             RunningWord = Database.Words[CurrentWordIndex];
         }
 
-        internal Exam Report(bool onlytotal, TheGame.ListType tipo)
+        internal int NumberOfWords()
         {
+            return this.Database.Words.Count();
+        }
+
+        internal Exam Report(bool onlytotal, TheGame.ListType tipo,List<String> WrongWords = null)
+        {
+
+            if (WrongWords != null) {
+                WrongWords.AddRange(this.Database.Words.Where(x => x.Pulou).Select(x => x.TheWord)); 
+            }
+
             Exam retorno = new Exam
             {
                 Date = DateTime.Now,

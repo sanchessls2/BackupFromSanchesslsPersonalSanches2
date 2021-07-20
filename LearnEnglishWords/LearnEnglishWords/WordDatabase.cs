@@ -130,7 +130,8 @@ As I fall down to my knees
 Don't let me drown (Don't let me, don't let me drown)
 Don't let me drown (Don't let me, don't let me drown)
 Don't let me drown (Don't let me, don't let me drown)
-And keep my head above water, above water";
+And keep my head above water, above water";        
+
         public static string SetTheRainOnFire = @"I let it fall, my heart
 And as it fell, you rose to claim it
 It was dark and I was over
@@ -5498,6 +5499,16 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "asleep", "", new List<ListType>() { ListType.HeadAboveWater });
 
 
+            //Palavras erradas
+            List<String> list = HDatabase.GetPalavrasErradas(1);
+
+            foreach (var itemWord in list)
+            {
+                P_Adiciona_palavra(ListofWords, itemWord, "", new List<ListType>() { ListType.PalavrasErradas });
+            }
+            
+
+
 
 
             /*
@@ -5867,6 +5878,7 @@ Maybe I'm just out of my mind";
 
         public List<ListType> WordType { get; internal set; }
         public string WhatToSay { get; internal set; }
+        public int QuantosErros { get; internal set; }
     }
 
 }

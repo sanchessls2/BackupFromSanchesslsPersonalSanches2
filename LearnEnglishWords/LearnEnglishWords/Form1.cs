@@ -33,6 +33,7 @@ namespace LearnEnglishWords
 
             typedWord.SelectionAlignment = HorizontalAlignment.Center;
 
+         
 
             P_ESPERA_RESPOSTA();
             
@@ -84,7 +85,8 @@ namespace LearnEnglishWords
 
         private void P_FIM_DO_JOGO()
         {
-            TheGame.GetInstance().Report(false,0);
+            List<String> WrongWords = new List<String>();
+            TheGame.GetInstance().Report(false,0, WrongWords);
 
 
             foreach (TheGame.ListType item in Enum.GetValues(typeof(TheGame.ListType)))
@@ -97,9 +99,13 @@ namespace LearnEnglishWords
                 }
             }
 
+            
+
             string report = TheGame.GetInstance().GetReport();
 
             List<MemoryStream> ListaGraphs = Grafico.CriaLista(TheGame.GetInstance().GetTipo());
+
+            HDatabase.GravaPalavrasErradas(WrongWords);
 
             Email.SendReport(report, ListaGraphs);
 
@@ -131,9 +137,20 @@ namespace LearnEnglishWords
         private void P_INCIALIZA_JOGO()
         {
             TheGame.LimpaJogo();
-            TheGame.GetInstance().Start();
+            try
+            {
+                TheGame.GetInstance().Start();
 
-            P_INICIA_PERGUNTA();
+                P_INICIA_PERGUNTA();
+
+            }
+            catch (Exception exp)
+            {
+
+                MessageBox.Show(exp.Message);
+                this.Close();
+            }
+            
         }
 
         private void P_INICIA_PERGUNTA()
@@ -302,6 +319,10 @@ namespace LearnEnglishWords
             MessageBox.Show("Vamos Começar?");
 
             P_INCIALIZA_JOGO();
+
+   
+
+
             this.MusicaMais80 = HDatabase.F_LiberaTraduzir(TheGame.GetInstance().GetTipo());
 
 

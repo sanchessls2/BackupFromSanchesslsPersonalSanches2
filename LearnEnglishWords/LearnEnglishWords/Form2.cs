@@ -79,7 +79,8 @@ namespace LearnEnglishWords
             TheGame.ListType.General,
             TheGame.ListType.HarryPotter1,
             TheGame.ListType.DriverLessons,
-            TheGame.ListType.Detran
+            TheGame.ListType.Detran,
+            TheGame.ListType.PalavrasErradasDATABASE
 
             };
 
