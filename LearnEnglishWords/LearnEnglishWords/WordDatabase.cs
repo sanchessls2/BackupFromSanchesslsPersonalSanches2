@@ -18,6 +18,37 @@ namespace LearnEnglishWords
 
     public class WordDatabase
     {
+        public static string Caroline = @"Where it began, I can't begin to knowing
+But then I know it's growing strong
+Was in the spring
+And spring became the summer
+Who'd have believed you'd come along
+Hands, touching hands
+Reaching out, touching me, touching you
+Sweet Caroline
+Good times never seemed so good
+I've been inclined
+To believe they never would
+But now I
+Look at the night and it don't seem so lonely
+We filled it up with only two
+And when I hurt
+Hurting runs off my shoulders
+How can I hurt when holding you
+One, touching one
+Reaching out, touching me, touching you
+Sweet Caroline
+Good times never seemed so good
+I've been inclined
+To believe they never would
+Oh no, no
+Sweet Caroline
+Good times never seemed so good
+Sweet Caroline
+I believe they never could
+Sweet Caroline
+Good times never seemed so good";
+
         public static string RollingInTheDeep = @"There's a fire starting in my heart
 Reaching a fever pitch and it's bringing me out the dark
 Finally, I can see you crystal clear
@@ -4305,6 +4336,80 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "you've", "", new List<ListType>() { ListType.RollingInTheDeep });
             P_Adiciona_palavra(ListofWords, "sown", "", new List<ListType>() { ListType.RollingInTheDeep });
 
+            P_Adiciona_palavra(ListofWords, "where", "Onde", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "it", "isto", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "began", "começasse", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "i", "eu", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "can't", "não pode", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "begin", "começar", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "to", "para", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "knowing", "sabendo", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "but", "mas", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "then", "então", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "know", "conhecer", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "it's", "Está", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "growing", "crescendo", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "strong", "Forte", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "was", "estava", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "in", "em", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "the", "a", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "spring", "Primavera", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "and", "e", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "became", "passou a ser", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "summer", "verão", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "who'd", "quem iria", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "have", "tenho", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "believed", "acreditava", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "you'd", "você", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "come", "vir", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "along", "junto", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "hands", "mãos", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "touching", "comovente", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "reaching", "alcançando", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "out", "Fora", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "me", "mim", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "you", "vocês", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "sweet", "doce", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "caroline", "caroline", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "good", "Boa", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "times", "vezes", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "never", "nunca", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "seemed", "pareceu", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "so", "assim", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "i've", "eu tenho", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "been", "sido", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "inclined", "inclinado", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "believe", "acreditam", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "they", "elas", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "would", "gostaria", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "now", "agora", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "look", "Veja", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "at", "no", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "night", "noite", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "don't", "não", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "seem", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "lonely", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "we", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "filled", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "up", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "with", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "only", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "two", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "when", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "hurt", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "hurting", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "runs", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "off", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "my", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "shoulders", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "how", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "can", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "holding", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "one", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "oh", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.Caroline });
+            P_Adiciona_palavra(ListofWords, "could", "", new List<ListType>() { ListType.Caroline });
+
 
             P_Adiciona_palavra(ListofWords, "here's", "", new List<ListType>() { ListType.Marron5Memories });
             P_Adiciona_palavra(ListofWords, "to", "", new List<ListType>() { ListType.Marron5Memories });
@@ -5847,7 +5952,7 @@ Maybe I'm just out of my mind";
             if (word.Trim() == "") return;
 
 
-            if (lists.Where(x => escolhas.Contains(x)).Any())
+            if (lists.Where(x => escolhas.Contains(x) ).Any())
             {
 
                 if (listofWords.Where(x => x.TheWord.ToLower().Contains(word.ToLower())).Any())

@@ -26,6 +26,7 @@ namespace LearnEnglishWords
         }
         public enum ListType
         {
+            Caroline,
             RollingInTheDeep,
             HeadAboveWater,
             SetTheRainOnFire,
@@ -314,7 +315,7 @@ namespace LearnEnglishWords
         private void LoadDatabase(TheGame.ListType somente)
         {
             this.ActualType = somente;
-            this.Database = new WordDatabase(new List<TheGame.ListType>() { somente });
+            this.Database = new WordDatabase(new List<TheGame.ListType>() { somente ,ListType.PalavrasErradas});
         }
    
         internal bool CheckWord(string text)

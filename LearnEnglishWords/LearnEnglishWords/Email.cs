@@ -10,6 +10,7 @@ namespace LearnEnglishWords
     {
         internal static void SendReport(string report,List<MemoryStream> attachs)
         {
+            return;
             try
             {
                 MailMessage mail = new MailMessage();

@@ -47,8 +47,9 @@ namespace LearnEnglishWords
 
             List<TheGame.ListType> ListaNegativa = new List<TheGame.ListType>() {
 
+            //TheGame.ListType.Caroline,
             //TheGame.ListType.RollingInTheDeep,
-                //TheGame.ListType.HeadAboveWater,
+            //TheGame.ListType.HeadAboveWater,
             //TheGame.ListType.SetTheRainOnFire,
             //TheGame.ListType.TheClimb,
             TheGame.ListType.MrJones,
@@ -127,6 +128,8 @@ namespace LearnEnglishWords
             {
                 ListaEscolhada.Add((TheGame.ListType)item);
             }
+
+            ListaEscolhada.Add(TheGame.ListType.PalavrasErradas);
             Form2.HardModeOnBool = HardMode.Checked;
 
             this.Hide();
