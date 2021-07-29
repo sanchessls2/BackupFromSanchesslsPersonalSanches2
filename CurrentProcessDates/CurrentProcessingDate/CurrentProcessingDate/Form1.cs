@@ -111,9 +111,9 @@ namespace CurrentProcessingDate
             string result2 = "";
 
 
-            string _filePath = Path.GetDirectoryName(System.AppDomain.CurrentDomain.BaseDirectory);
-            StreamReader r = new StreamReader(_filePath + "/mockresult.txt");
-            var a = r.ReadToEnd();
+          //  string _filePath = Path.GetDirectoryName(System.AppDomain.CurrentDomain.BaseDirectory);
+            //StreamReader r = new StreamReader(_filePath + "/mockresult.txt");
+            var a =data;
 
 
             var from = "></p><p>As of";
