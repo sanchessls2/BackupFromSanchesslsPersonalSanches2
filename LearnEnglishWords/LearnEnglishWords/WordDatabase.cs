@@ -18,6 +18,52 @@ namespace LearnEnglishWords
 
     public class WordDatabase
     {
+        public static string LazySong = @"Today I don't feel like doing anything
+I just wanna lay in my bed
+Don't feel like picking up my phone, so leave a message at the tone
+'Cause today I swear I'm not doing anything
+I'm gonna kick my feet up, then stare at the fan
+Turn the TV on, throw my hand in my pants
+Nobody's gon' tell me I can't, no!
+I'll be lounging on the couch, just chilling in my Snuggie
+Click to MTV, so they can teach me how to dougie
+'Cause in my castle I'm the freaking man
+Oh Yes! I said it, I said it, I said it 'cause I can
+Today I don't feel like doing anything
+I just wanna lay in my bed
+Don't feel like picking up my phone, so leave a message at the tone
+'Cause today I swear I'm not doing anything
+Nothing at all
+Woo, ooh, woo, ooh, ooh
+Nothing at all
+Woo, ooh, woo, ooh, ooh
+Tomorrow I'll wake up, do some P90X
+Meet a really nice girl, have some really nice sex
+And she's gonna scream out This is great (Oh my god, this is great) Yeah!
+I might mess around and get my college degree
+I bet my old man will be so proud of me
+But sorry pops, you'll just have to wait
+Oh Yes! I said it, I said it, I said it 'cause I can
+Today I don't feel like doing anything
+I just wanna lay in my bed
+Don't feel like picking up my phone, so leave a message at the tone
+'Cause today I swear I'm not doing anything
+No, I ain't gonna comb my hair
+'Cause I ain't going anywhere
+No, no, no, no, no, no, no, no, no, oh
+I'll just strut in my birthday suit
+And let everything hang loose
+Yeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah
+Oh, today I don't feel like doing anything
+I just wanna lay in my bed
+Don't feel like picking up my phone, so leave a message at the tone
+'Cause today I swear I'm not doing anything
+Nothing at all
+Woo, ooh, woo, ooh, ooh
+Nothing at all
+Woo, ooh, woo, ooh, ooh
+Nothing at all";
+
         public static string Caroline = @"Where it began, I can't begin to knowing
 But then I know it's growing strong
 Was in the spring
@@ -4409,6 +4455,127 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "oh", "", new List<ListType>() { ListType.Caroline });
             P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.Caroline });
             P_Adiciona_palavra(ListofWords, "could", "", new List<ListType>() { ListType.Caroline });
+
+            P_Adiciona_palavra(ListofWords, "today", "hoje", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "i", "eu", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "don't", "não", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "feel", "sentir", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "like", "Como", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "doing", "fazendo", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "anything", "algo", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "just", "somente", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "wanna", "quer", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "lay", "deitar", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "in", "em", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "my", "minha", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "bed", "cama", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "picking", "colheita", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "up", "pra cima", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "phone", "telefone", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "so", "assim", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "leave", "deixar", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "a", "uma", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "message", "mensagem", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "at", "no", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "the", "a", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "tone", "tom", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "cause", "causa", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "swear", "xingar", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "i'm", "Eu estou", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "not", "não", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "gonna", "vai", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "kick", "pontapé", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "feet", "pés", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "then", "então", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "stare", "olhar fixamente", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "fan", "fã", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "turn", "virar", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "tv", "televisão", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "on", "em", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "throw", "lançar", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "hand", "mão", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "pants", "calça", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "nobody's", "de ninguém", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "gon'", "vai '", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "tell", "dizer", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "me", "mim", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "can't", "não pode", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "no", "não", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "i'll", "doente", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "be", "ser", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "lounging", "descansando", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "couch", "sofá", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "chilling", "arrepiante", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "snuggie", "aconchego", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "click", "clique", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "to", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "mtv", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "they", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "can", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "teach", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "how", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "dougie", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "castle", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "freaking", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "man", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "oh", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "yes", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "said", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "it", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "'cause", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "nothing", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "all", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "woo", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "ooh", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "tomorrow", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "wake", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "do", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "some", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "p", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "x", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "meet", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "really", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "nice", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "girl", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "have", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "sex", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "and", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "she's", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "scream", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "out", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "this", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "is", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "great", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "god", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "yeah", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "might", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "mess", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "around", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "get", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "college", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "degree", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "bet", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "old", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "will", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "proud", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "of", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "but", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "sorry", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "pops", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "you'll", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "wait", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "aingt", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "comb", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "hair", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "going", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "anywhere", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "strut", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "birthday", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "suit", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "let", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "everything", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "hang", "", new List<ListType>() { ListType.LazySong });
+            P_Adiciona_palavra(ListofWords, "loose", "", new List<ListType>() { ListType.LazySong });
 
 
             P_Adiciona_palavra(ListofWords, "here's", "", new List<ListType>() { ListType.Marron5Memories });

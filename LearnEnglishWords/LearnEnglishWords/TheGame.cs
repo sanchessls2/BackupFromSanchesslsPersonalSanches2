@@ -26,6 +26,7 @@ namespace LearnEnglishWords
         }
         public enum ListType
         {
+            LazySong,
             Caroline,
             RollingInTheDeep,
             HeadAboveWater,
