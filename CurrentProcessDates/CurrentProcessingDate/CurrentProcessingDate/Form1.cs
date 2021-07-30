@@ -43,8 +43,11 @@ namespace CurrentProcessingDate
                     DiaDeHoje = DateTime.Now;
 
                     P_Envia_Email(data1,data2);
-                }
+                }                
             }
+            
+            label2.Text = "Rodou o Timer" + DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
+
         }
 
         private bool MesmoDia()
@@ -79,11 +82,13 @@ namespace CurrentProcessingDate
             var textoEmail = @"Atualizacao Visto : " + datafinal.ToShortDateString() + Environment.NewLine +
                               "Dias Faltando Sem Indice :  " + DiasFaltandoNoGeral.TotalDays + Environment.NewLine +
                               "Indice : " + vIndice.ToString("0.00") + Environment.NewLine +
-                              "Melhor Data : " + DateTime.Now.AddDays(DiasFaltandoNoGeral.TotalDays).ToShortDateString();
+                              "Melhor Data : " + DateTime.Now.AddDays(DiasFaltandoNoGeral.TotalDays).ToShortDateString()+
+                              "AS Melhor Data : " + data1.ToShortDateString() + "Processing : " + data2.ToShortDateString() ;
 
             Email.SendReport(Cabecalho, textoEmail);
             label1.Text = "Ultima Vez atualizado : " + DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
         }
+        
 
         private Tuple<DateTime, DateTime> getNovasDatas()
         {
@@ -107,11 +112,9 @@ namespace CurrentProcessingDate
 
         private Tuple<DateTime, DateTime> GarimpaDados(string data)
         {
-            string result1 = "";
-            string result2 = "";
 
 
-          //  string _filePath = Path.GetDirectoryName(System.AppDomain.CurrentDomain.BaseDirectory);
+            //  string _filePath = Path.GetDirectoryName(System.AppDomain.CurrentDomain.BaseDirectory);
             //StreamReader r = new StreamReader(_filePath + "/mockresult.txt");
             var a =data;
 
@@ -135,8 +138,8 @@ namespace CurrentProcessingDate
 
             var data1 = a.Substring(pos1 , pos2 - pos1).Trim();
 
-            result1 = GetdateFrom(data1);
-                      
+            string result1 = GetdateFrom(data1);
+
             var from2 = "Trusted Partner</td><td class=\"left\">";
             var to2 = "</td></tr><tr><td>Standard";
 
@@ -157,7 +160,7 @@ namespace CurrentProcessingDate
 
             var data2 = a.Substring(pos12, pos22 - pos12).Trim();
 
-            result2 = GetdateFrom(data2);
+            string result2 = GetdateFrom(data2);
 
             if (result1 != "" && result2 != "")
             {
