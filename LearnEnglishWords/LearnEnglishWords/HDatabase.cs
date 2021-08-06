@@ -122,10 +122,11 @@ namespace LearnEnglishWords
                 if (palavra != null)
                 {
                     palavra.QuantosErros += 1;
+                    palavra.UltimoErro = DateTime.Now;
                 }
                 else
                 {
-                    palavra = new WordWrong() { TheWord = item.Trim(), QuantosErros = 1 };
+                    palavra = new WordWrong() { TheWord = item.Trim(), QuantosErros = 1,UltimoErro = DateTime.Now };
                     objAtual.Add(palavra);
                 }
 
@@ -149,17 +150,93 @@ namespace LearnEnglishWords
             */
         }
 
-        internal static List<string> GetPalavrasErradas(int aboveX)
+
+        internal static List<WordWrong> GetPalavrasErradas(int aboveX)
         {
             List<WordWrong> a = GetFile<WordWrong>(ListType.PalavrasErradasDATABASE);
-            return a.Where(x => x.QuantosErros > aboveX).Select(x => x.TheWord).ToList();
+            return a.Where(x => x.QuantosErros > aboveX).Select(x => x).ToList();
+
+        }
+
+        internal static List<WordWrong> GetPalavrasErradas()
+        {
+            List<WordWrong> a = GetFile<WordWrong>(ListType.PalavrasErradasDATABASE);
+            return a;
+
+        }
+
+        public static void ExecutaScripts()
+        {
+            lock (objectBlock) 
+            {
+                P_SCRIPT_AJUSTE_DATA_PALAVRA_ERRADA(); 
+            }
+
+            
+        }
+
+        private static void P_SCRIPT_AJUSTE_DATA_PALAVRA_ERRADA()
+        {
+            string scriptName = "AjustePalavraErrada";
+            
+            bool Rodouscript = F_RodouScript(scriptName);
+
+            if (!Rodouscript)
+            {
+                //Script
+
+                var Palavras = GetPalavrasErradas();
+
+                foreach (var item in Palavras)
+                {
+                    if (item.UltimoErro <= new DateTime(1900,1,1))
+                    {
+                        item.UltimoErro = DateTime.Now;
+                    }
+                }
+
+                SetFile(Palavras, ListType.PalavrasErradasDATABASE);
+
+                //Script
+
+                P_ADICIONA_SCRIPT(scriptName);
+            }
+
+        }
+
+        private static void P_ADICIONA_SCRIPT(string scriptName)
+        {
+            List<Script> a = GetFile<Script>(ListType.Script);
+
+            var b = a.Where(x => x.ScriptName == scriptName);
+
+            if (b.Count() <= 0)
+            {
+                a.Add(new Script() { ScriptName = scriptName});
+            }
+
+            SetFile<Script>(a,ListType.Script);
+            
+        }
+
+        private static bool F_RodouScript(string scriptName)
+        {
+            List<Script> a = GetFile<Script>(ListType.Script);
+            return a.Exists(x => x.ScriptName == scriptName);
 
         }
     }
+
+    public class Script
+    {
+        public string ScriptName { get; set; }
+    }
+
     public class WordWrong
     {
         public string TheWord { get;  set; }
         public int QuantosErros { get;  set; }
+        public DateTime UltimoErro { get; set; }
     }
 
     public class Exam {

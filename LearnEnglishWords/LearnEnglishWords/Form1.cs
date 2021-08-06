@@ -86,7 +86,10 @@ namespace LearnEnglishWords
         private void P_FIM_DO_JOGO()
         {
             List<String> WrongWords = new List<String>();
+
             TheGame.GetInstance().Report(false,0, WrongWords);
+
+            HDatabase.GravaPalavrasErradas(WrongWords);
 
 
             foreach (TheGame.ListType item in Enum.GetValues(typeof(TheGame.ListType)))
@@ -104,8 +107,7 @@ namespace LearnEnglishWords
             string report = TheGame.GetInstance().GetReport();
 
             List<MemoryStream> ListaGraphs = Grafico.CriaLista(TheGame.GetInstance().GetTipo());
-
-            HDatabase.GravaPalavrasErradas(WrongWords);
+            
 
             Email.SendReport(report, ListaGraphs);
 
@@ -136,6 +138,8 @@ namespace LearnEnglishWords
 
         private void P_INCIALIZA_JOGO()
         {
+            HDatabase.ExecutaScripts();
+
             TheGame.LimpaJogo();
             try
             {

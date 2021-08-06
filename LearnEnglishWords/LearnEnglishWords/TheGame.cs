@@ -26,6 +26,7 @@ namespace LearnEnglishWords
         }
         public enum ListType
         {
+            BangBang,
             LazySong,
             Caroline,
             RollingInTheDeep,
@@ -65,7 +66,8 @@ namespace LearnEnglishWords
             Detran,
             AVRILImWithYouAvrilLavigne,
             PalavrasErradas,
-            PalavrasErradasDATABASE
+            PalavrasErradasDATABASE,
+            Script
         }
 
         internal ListType GetTipo()
@@ -280,7 +282,35 @@ namespace LearnEnglishWords
             }
 
 
+
+            if (onlytotal)
+            {
+                AdicionaReport(F_TOP_10_ERROS());
+            }
+
+
+
+
+
             return retorno;
+        }
+
+        private string F_TOP_10_ERROS()
+        {
+            var txt = Environment.NewLine;
+
+            var q = HDatabase.GetPalavrasErradas(0).Where(x => x.UltimoErro > DateTime.Now.AddMonths(-1)).OrderBy(x => x.QuantosErros).ThenBy(x => x.TheWord).Take(10);
+
+            if (q.Count() > 0)
+            {
+                txt += " TOP 10 Palavras Erradas no Ultimo Mes" + Environment.NewLine;
+            }
+            foreach (var item in q)
+            {
+                txt += item.TheWord + " "+ item.QuantosErros.ToString("000") +" Vezes" +  Environment.NewLine;
+            }
+
+            return txt;
         }
 
         public double GetPercentRight()

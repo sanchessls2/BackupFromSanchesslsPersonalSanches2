@@ -18,6 +18,82 @@ namespace LearnEnglishWords
 
     public class WordDatabase
     {
+        public static string BangBang = @"She got a body like an hourglass
+But I can give it to you all the time
+She got a booty like a Cadillac
+But I can send you into overdrive (Oh)
+(You've been waiting for that)
+(Stop, hold up, swing your bat)
+See anybody could be bad to you
+You need a good girl to blow your mind, yeah
+Bang bang into the room (I know you want it)
+Bang bang all over you (I'll let you have it)
+Wait a minute, let me take you there (Ah)
+Wait a minute 'til ya (Ah, hey!)
+Bang bang there goes your heart (I know you want it)
+Back, back seat of my car (I'll let you have it)
+Wait a minute, let me take you there (Ah)
+Wait a minute 'til ya (Ah, hey!)
+She might'a let you hold her hand in school
+But I'ma show you how to graduate
+No, I don't need to hear you talk the talk
+Just come and show me what your momma gave ya (Oh, yeah)
+I heard you've got a very big (Shh)
+Mouth but don't say a thing
+See anybody could be good to you
+You need a bad girl to blow your mind
+Bang bang into the room (I know you want it)
+Bang bang all over you (I'll let you have it)
+Wait a minute, let me take you there (Ah)
+Wait a minute 'til ya (Ah, hey!)
+Bang bang there goes your heart (I know you want it)
+Back, back seat of my car (I'll let you have it)
+Wait a minute, let me take you there (Ah)
+Wait a minute 'til ya (Ah, yeah) (You know what, girls?)
+(Let me show you how to do it)
+It's Myx Moscato
+It's frizz in a bottle
+It's Nicki full throttle
+It's oh, oh
+Swimming in the grotto
+We winning in the lotto
+We dipping in the pot of blue foam, so
+Kitten so good
+It's dripping on wood
+Get a ride in the engine that could go
+Batman robbin' it
+Bang, bang, cockin' it
+Queen Nicki dominant, prominent
+It's me, Jessie, and Ari
+If they test me they sorry
+Ride his uh, like a Harley
+Then pull off in his Ferrari
+If he hangin' we bangin'
+Phone rangin', he slangin'
+It ain't karaoke night but get the mic 'cause I'm singin' (Uh)
+B to the A, to the N, to the G, to the uh (Baby)
+B to the A, to the N, to the G, to the, hey
+See anybody could be good to you
+You need a bad girl to blow your mind (Your mind)
+Bang, bang into the room (I know you want it)
+Bang bang all over you (I'll let you have it)
+Wait a minute let me take you there (Ah)
+Wait a minute 'til ya (Ah, hey!)
+Bang bang there goes your heart (I know you want it)
+Back, back seat of my car (I'll let you have it)
+Wait a minute let me take you there (Ah)
+Wait a minute 'til ya (Ah, hey!)
+Bang, bang into the room (I know you want it)
+Bang bang all over you (I'll let you have it)
+Yo, I said
+Bang, bang
+Bang, bang, ba-bang, bang
+Bang, bang, bang
+Bang, bang, ba-bang, bang
+Bang bang there goes your heart (I know you want it)
+Back, back seat of my car (I'll let you have it)
+Wait a minute let me take you there (Ah)
+Wait a minute 'til ya (Ah, hey!)";
         public static string LazySong = @"Today I don't feel like doing anything
 I just wanna lay in my bed
 Don't feel like picking up my phone, so leave a message at the tone
@@ -3484,7 +3560,6 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "chill", "calafrio", new List<ListType>() { ListType.Avril_Complicated });
             P_Adiciona_palavra(ListofWords, "out", "Fora", new List<ListType>() { ListType.Avril_Complicated });
             P_Adiciona_palavra(ListofWords, "what", "o que", new List<ListType>() { ListType.Avril_Complicated });
-            P_Adiciona_palavra(ListofWords, "ya", "sim", new List<ListType>() { ListType.Avril_Complicated });
             P_Adiciona_palavra(ListofWords, "yelling", "gritando", new List<ListType>() { ListType.Avril_Complicated });
             P_Adiciona_palavra(ListofWords, "for", "para", new List<ListType>() { ListType.Avril_Complicated });
             P_Adiciona_palavra(ListofWords, "lay", "deitar", new List<ListType>() { ListType.Avril_Complicated });
@@ -3991,7 +4066,6 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "said", "", new List<ListType>() { ListType.SayYouWontLetGoJamesArthur });
             P_Adiciona_palavra(ListofWords, "already", "", new List<ListType>() { ListType.SayYouWontLetGoJamesArthur });
             P_Adiciona_palavra(ListofWords, "told", "", new List<ListType>() { ListType.SayYouWontLetGoJamesArthur });
-            P_Adiciona_palavra(ListofWords, "ya", "", new List<ListType>() { ListType.SayYouWontLetGoJamesArthur });
             P_Adiciona_palavra(ListofWords, "think", "", new List<ListType>() { ListType.SayYouWontLetGoJamesArthur });
             P_Adiciona_palavra(ListofWords, "that", "", new List<ListType>() { ListType.SayYouWontLetGoJamesArthur });
             P_Adiciona_palavra(ListofWords, "should", "", new List<ListType>() { ListType.SayYouWontLetGoJamesArthur });
@@ -4576,6 +4650,162 @@ Tomorrow it may change";
             P_Adiciona_palavra(ListofWords, "everything", "", new List<ListType>() { ListType.LazySong });
             P_Adiciona_palavra(ListofWords, "hang", "", new List<ListType>() { ListType.LazySong });
             P_Adiciona_palavra(ListofWords, "loose", "", new List<ListType>() { ListType.LazySong });
+
+            P_Adiciona_palavra(ListofWords, "she", "ela", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "got", "pegou", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "a", "uma", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "body", "corpo", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "like", "Como", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "an", "um", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "hourglass", "ampulheta", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "but", "mas", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "i", "eu", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "can", "posso", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "give", "dar", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "it", "isto", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "to", "para", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "you", "vocês", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "all", "tudo", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "the", "a", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "time", "Tempo", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "booty", "saque", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "cadillac", "cadillac", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "send", "enviar", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "into", "para dentro", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "overdrive", "overdrive", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "you've", "você tem", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "been", "sido", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "waiting", "espera", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "for", "para", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "that", "que", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "stop", "Pare", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "hold", "espera", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "up", "pra cima", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "swing", "balanço", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "your", "sua", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "bat", "bastão", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "see", "Vejo", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "anybody", "qualquer pessoa", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "could", "poderia", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "be", "ser", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "bad", "mau", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "need", "precisar", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "good", "Boa", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "girl", "garota", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "blow", "golpe", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "mind", "mente", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "yeah", "sim", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "bang", "estrondo", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "room", "quarto", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "know", "conhecer", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "want", "quer", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "over", "sobre", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "i'll", "doente", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "let", "deixar", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "have", "tenho", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "wait", "esperar", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "minute", "minuto", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "me", "mim", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "take", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "there", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "ah", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "'til", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "hey", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "goes", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "heart", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "back", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "seat", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "of", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "my", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "car", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "might", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "her", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "hand", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "in", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "school", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "i'ma", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "show", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "how", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "graduate", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "no", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "don't", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "hear", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "talk", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "just", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "come", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "and", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "what", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "momma", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "gave", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "heard", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "very", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "big", "", new List<ListType>() { ListType.BangBang });            
+            P_Adiciona_palavra(ListofWords, "mouth", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "say", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "thing", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "girls", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "do", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "it's", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "moscato", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "frizz", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "bottle", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "nicki", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "full", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "throttle", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "swimming", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "grotto", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "we", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "winning", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "lotto", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "dipping", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "pot", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "blue", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "foam", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "so", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "kitten", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "dripping", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "on", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "wood", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "get", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "ride", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "engine", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "go", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "batman", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "robbing", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "cocking", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "queen", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "dominant", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "prominent", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "jessie", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "if", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "they", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "test", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "sorry", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "his", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "harley", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "then", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "pull", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "off", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "ferrari", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "he", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "hanging", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "banging", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "phone", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "ranging", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "slanging", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "aingt", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "karaoke", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "night", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "mic", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "'cause", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "i'm", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "singing", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "b", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "n", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "g", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "baby", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "said", "", new List<ListType>() { ListType.BangBang });
+            P_Adiciona_palavra(ListofWords, "bang", "", new List<ListType>() { ListType.BangBang });
 
 
             P_Adiciona_palavra(ListofWords, "here's", "", new List<ListType>() { ListType.Marron5Memories });
@@ -5772,16 +6002,12 @@ Tomorrow it may change";
 
 
             //Palavras erradas
-            List<String> list = HDatabase.GetPalavrasErradas(1);
+            List<String> list = HDatabase.GetPalavrasErradas(1).Select(x => x.TheWord).ToList();
 
             foreach (var itemWord in list)
             {
                 P_Adiciona_palavra(ListofWords, itemWord, "", new List<ListType>() { ListType.PalavrasErradas });
-            }
-            
-
-
-
+            }         
 
             /*
              * 0-- n conheco nenhum
