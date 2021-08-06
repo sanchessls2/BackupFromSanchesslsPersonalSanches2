@@ -175,7 +175,12 @@ namespace CurrentProcessingDate
         {
             var regex = new Regex("[0-9]{1,2} [A-z]+ [0-9]{4}");
             return regex.Match(date1).Value;
+        }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            P_Executa();
+            timer1.Enabled = true;
 
         }
     }
